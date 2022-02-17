@@ -1,0 +1,126 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+ul{
+    list-style: none;
+}
+
+header{
+    background-color: orange;
+    width: 100vw;
+    height: 100vh;
+}
+
+.header__nav{
+    background-color: aqua;
+    grid-area: nav;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.header__nav ul li {
+    display: inline-block;
+}
+.header__menu li{
+    margin-left: 3rem;
+    position: relative;
+} 
+.header__menu{
+    position: relative;
+    left: 7vw;
+}
+.header__redes li{
+    margin-left: 1rem;
+}
+.header__menu li a, .header__redes li a{
+    text-decoration: none;
+    color: blueviolet;
+    font-size: 1.2rem;
+}
+.header__texto{
+    background-color: bisque;
+    grid-area: texto;
+}
+.header__extra{
+    background-color: rgb(168, 124, 57);
+    grid-area: extra;
+}
+
+#header__index{
+    display: grid;
+    grid-template-areas: 
+    "nav nav"
+    "texto extra";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 12vh 77vh;
+    grid-row-gap: 20px;
+}
+
+/* Termina header */
+/* Empeiza Nosotros */
+#nosotros{
+    background-color: brown;
+    width: 100vw;
+    margin-top: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.nosotros__contenedor{
+    background-color: antiquewhite;
+    width: 95vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5rem 0rem;
+}
+
+.nosotros__texto{
+    background-color: aquamarine;
+    width: 50%;
+    margin-right: 2rem;
+}
+.nosotros__img{
+    background-color: darkgoldenrod;
+    width: 28rem;
+    height: 14rem;
+}
+/* Termina Nosotros */
+
+
+/* Epieza servicios */
+#servicios{
+    background-color: lavenderblush;
+    width: 100vw;
+    width: auto;
+    margin-top: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.servicios__texto{
+    background-color: darkgray;
+    width:60vw ;
+}
+.servicios__destacados{
+    margin-top: 2rem;
+    background-color: aqua;
+    width: 95vw;
+    height: 110vh;
+}
+.servicios__precios{
+    margin-top: 2rem;
+    background-color: aqua;
+    width: 95vw;
+    height: 100vh;
+}
+.servicios__mantenimiento{
+    margin-top: 2rem;
+    background-color: aqua;
+    width: 95vw;
+    height: 100vh;
+}
