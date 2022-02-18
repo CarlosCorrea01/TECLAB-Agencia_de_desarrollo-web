@@ -58,6 +58,7 @@ header{
 }
 
 /* Termina header */
+
 /* Empeiza Nosotros */
 #nosotros{
     background-color: brown;
@@ -91,36 +92,122 @@ header{
 
 
 /* Epieza servicios */
+
 #servicios{
     background-color: lavenderblush;
     width: 100vw;
-    width: auto;
     margin-top: 15vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
 
+   display: grid;
+   grid-template-areas: 
+   "serviciosTexto"
+   "serviciosDesta"
+   "precioTitulo"
+   "serviciosPre"
+   "serviciosMantT"
+   "serviciosMant";
+   grid-template-columns: 1fr;
+   grid-template-rows: auto 45rem auto 35rem auto 45rem;
+   grid-row-gap: 2rem;
+
+   justify-items: center; 
+
+}
+/* Empieza texto de servicios */
 .servicios__texto{
     background-color: darkgray;
-    width:60vw ;
+    grid-area: serviciosTexto;
+    width: 60vw;
 }
+/* Termina texto de servicios */
+/* Empieza Destacados */
 .servicios__destacados{
-    margin-top: 2rem;
-    background-color: aqua;
+    background-color: blue;
+    grid-area: serviciosDesta;
     width: 95vw;
-    height: 110vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+}
+.servicios__destacados div{
+    background-color: bisque;
+}
+
+/* Termina Destacados */
+
+/* Empieza Precios*/
+.servicios__precios div{
+    background-color: rgb(219, 199, 199);
+   
+ }
+.servicios__precios--titulo{
+    grid-area: precioTitulo;
+    background-color: aqua;
+    position: relative;
+    top: 1.5rem;
 }
 .servicios__precios{
-    margin-top: 2rem;
-    background-color: aqua;
-    width: 95vw;
-    height: 100vh;
+   background-color: brown;
+   grid-area: serviciosPre;
+   width: 95vw;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-rows: 1fr;
+   gap:1rem;
 }
+/* Termina precios */
+
+/* Empieza mantenimiento */
+
+.servicios__mantenimiento--titulo{
+    grid-area: serviciosMantT;
+    background-color: rgb(170, 180, 26);
+    position: relative;
+    top: 1.5rem;
+}
+.servicios__mantenimiento div{
+    background-color: rgb(146, 22, 184);
+}
+
 .servicios__mantenimiento{
-    margin-top: 2rem;
+    background-color: rgb(202, 73, 94);
+    grid-area: serviciosMant;
+    width: 95vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+}
+
+/* Termina servicios */
+
+/* Empieza portafolio */
+#portafolio{
+    background-color: lavenderblush;
+    width: 100vw;
+    margin-top: 15vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 16rem auto;
+    gap: 2rem;
+    justify-items: center;
+}
+.portafolio__galeria div{
+    background-color: crimson;
+}
+.portafolio__galeria{
     background-color: aqua;
     width: 95vw;
-    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 2rem;
+}
+/* Termina Portafolio */
+/* Empieza equipo */
+#equipo{
+    background-color: lavenderblush;
+    width: 100vw;
+    margin-top: 15vh;
 }
