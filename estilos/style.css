@@ -75,7 +75,6 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 5rem 0rem;
 }
 
 .nosotros__texto{
@@ -210,4 +209,148 @@ header{
     background-color: lavenderblush;
     width: 100vw;
     margin-top: 15vh;
+    display: flex;
+    justify-content: center;
+}
+.equipo__contenedor{
+    background-color: rgb(196, 173, 45);
+    width: 95vw;
+    margin: 2rem 0rem;
+    display: grid;
+    grid-template-areas: 
+    "equipoTexto equipoImg"
+    "equipoBoton equipoImg";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 15rem auto;
+    grid-row-gap: 2rem;
+    grid-column-gap: 1rem;
+
+}
+.equipo__texto{
+    background-color: darkgray;
+    grid-area: equipoTexto;
+}
+.equipo__img{
+    background-color: darkslateblue;
+    grid-area: equipoImg;
+    
+}
+.equipo__boton{
+    background-color: darkmagenta;
+    grid-area: equipoBoton;
+    display: flex;
+    justify-content: center;
+}
+/* Termina equipo */
+/* Empieza contactos */
+#contacto{
+    background-color: rgb(170, 67, 101);
+    width: 100vw;
+    margin-top: 15vh;
+    margin-bottom: 15vh;
+    display: flex;
+    justify-content: center;
+}
+.contacto__contenedor{
+    background-color: rgb(196, 173, 45);
+    width: 95vw;
+    margin: 2rem 0rem;
+    display: grid;
+    grid-template-areas: 
+    "contactoMap contactoTexto"
+    "contactoMap contactoFormu";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-row-gap: 0.5rem;
+    grid-column-gap: 2rem;
+
+}
+.contacto__mapa{
+    background-color: darkseagreen;
+    grid-area: contactoMap;
+    display: flex;
+    justify-content: center;
+}
+.contacto__texto{
+    background-color: gainsboro;
+    grid-area: contactoTexto;
+}
+/* Contacto FORMULARIO */
+.contacto__formulario{
+    background-color: darkkhaki;
+    grid-area: contactoFormu;
+
+    display: grid;
+    grid-template-areas: 
+    "nombre correo"
+    "msj msj"
+    "enviar enviar";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2rem 10rem 2rem;
+    grid-column-gap: 1rem;
+    grid-row-gap: 0.5rem;
+    justify-items: center;
+}
+.nombre{
+    grid-area: nombre;
+    width: 98%;
+}
+.correo{
+    grid-area: correo;
+    width: 98%;
+}
+.msj{
+    grid-area: msj;
+    width: 95%;
+}
+.enviar{
+    grid-area: enviar;
+    width: 10%;
+}
+/* Contacto FORMULARIO */
+/* Footer */
+footer{
+    background-color: darkkhaki;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: center;
+
+}
+.footer__contenedor{
+    width: 95%;
+    background-color: aqua;
+    display: grid;
+    grid-template-areas: 
+    "footerLogo footerLogo footerLogo"
+    "footerDirec footerRedes footerLegal"
+    "footerInfo footerInfo footerInfo";
+    grid-template-columns: 1fr 0.5fr 1fr;
+    grid-template-rows: auto 5rem auto;
+}
+.footer__logo{
+    background-color: darksalmon;
+    grid-area: footerLogo;
+}
+.footer__direcciones{
+    background-color: dimgray;
+    grid-area: footerDirec;
+}
+.footer__redes{
+    background-color: dodgerblue;
+    grid-area: footerRedes;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer__redes ul li{
+    display: inline-block;
+    margin-left: 1rem;
+}
+.footer__legales{
+    background-color: floralwhite;
+    grid-area: footerLegal;
+}
+.footer__info{
+    background-color: darkslategrey;
+    grid-area: footerInfo;
 }
