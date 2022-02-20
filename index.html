@@ -13,23 +13,26 @@
 <body>
 
     <header>
+
         <div id="header__index">
 
             <nav class="header__nav">
-                <a class="header__logo" href="#">logo</a>
+                <div>
+                    <a class="header__logo" href="#"><h2>TECLAB</h2></a>
 
-                <ul class="header__menu">
-                    <li><a href="#nosotros">Nosotros</a></li>
-                    <li><a href="#servicios">Servicios</a></li>
-                    <li><a href="#portafolio">Portafolio</a></li>
-                    <li><a href="#equipo">Equipo</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
-                </ul>
+                    <ul class="header__menu">
+                        <li><a href="#nosotros">Nosotros</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#portafolio">Portafolio</a></li>
+                        <li><a href="#equipo">Equipo</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
 
-                <ul class="header__redes">
-                    <li><a href="">insta</a></li>
-                    <li><a href="#">face</a></li>
-                </ul>
+                    <ul class="header__redes">
+                        <li><a  class="header__redes--insta" href="#"><img src="./imagenes/instagram (1).png" alt=""></a></li>
+                        <li><a class="header__redes--face" href="#"><img src="./imagenes/simbolo-de-la-aplicacion-de-facebook.png" alt=""></a></li>
+                    </ul>
+                </div>
             </nav>
 
             <div class="header__texto">
@@ -49,12 +52,13 @@
     </header>
 
     <section id="nosotros">
+
         <div class="nosotros__contenedor">
 
             <div class="nosotros__texto">
                 <h3>Sobre Nosotros</h3>
                 <p>
-                    (Nombre) es una Agencia de Diseño Web y Marketing Digital ubicada en Puerto Madero Buenos Aires.
+                    TECLAB es una Agencia de Diseño Web y Marketing Digital ubicada en Puerto Madero Buenos Aires.
                     Nuestro equipo está formado por un grupo de profesionales especializados en diversas disciplinas;
                     Marketing, Analistas, Diseñadores y Programadores que nos permite ofrecer servicios integrales de
                     comunicación.
@@ -102,8 +106,8 @@
             <div class="servicio__precio--3">3</div>
         </div>
 
-        <div class="servicios__mantenimiento--titulo">
-            <h3>Servicios opcionales</h3>
+        <div>
+            <h3 class="servicios__mantenimiento--titulo">Servicios opcionales</h3>
         </div>
 
         <div class="servicios__mantenimiento">
@@ -119,7 +123,7 @@
 
     <section id="portafolio">
 
-        <div class="portafolio__tirulo">
+        <div class="portafolio__titulo">
             <h3>Nuestros trabajos</h3>
             <p>!Enterate de nuestros proyectos mas recientes!</p>
         </div>
@@ -128,11 +132,12 @@
             <div>1</div>
             <div>2</div>
             <div>3</div>
+            <div class="portafolio__galeria--4">4</div>
         </div>
 
-
+        <div class="portafolio__boton">
         <a href="./secciones/mastrabajos.html"><button>Mas trabajos</button></a>
-
+        </div>
 
     </section>
 
@@ -155,8 +160,9 @@
 
             </div>
 
-            <a class="equipo__boton" href="./secciones/conocenos.html"><button>Conocenos</button></a>
-
+            <div class="equipo__boton">
+            <a href="./secciones/conocenos.html"><button>Conocenos</button></a>
+            </div>
         </div>
 
     </section>
@@ -200,7 +206,7 @@
         <div class="footer__contenedor">
 
             <div class="footer__logo">
-                <a href="index.html">logo</a>
+                <a href="index.html"><h2>TECLAB</h2></a>
             </div>
 
 
@@ -222,10 +228,10 @@
                 <ul>
 
                     <li>
-                        <a href="https://www.instagram.com/" target="_blank">insta</a>
+                        <a class="footer__redes--insta" href="https://www.instagram.com/" target="_blank"><img src="./imagenes/instagram (1).png" alt=""></a>
                     </li>
                     <li>
-                        <a href="https://www.facebook.com/" target="_blank">face</a>
+                        <a class="footer__redes--face" href="https://www.facebook.com/" target="_blank"><img src="./imagenes/simbolo-de-la-aplicacion-de-facebook.png" alt=""></a>
                     </li>
 
                 </ul>
@@ -245,7 +251,7 @@
             </div>
 
             <div class="footer__info">
-                todos los derechos reservados
+                 <p>Teclab 2022</p>
             </div>
 
 

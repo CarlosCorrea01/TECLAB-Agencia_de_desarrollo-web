@@ -5,87 +5,170 @@
 ul{
     list-style: none;
 }
-
+body{
+    width: 100%;
+}
 header{
-    background-color: orange;
-    width: 100vw;
-    height: 100vh;
+    background: hsla(340, 39%, 48%, 0.9);  
+    background: -webkit-linear-gradient(to right, rgba(60, 142, 154, 0.9), rgba(108, 108, 132, 0.8), hsla(340, 39%, 48%, 0.9));  
+    background: linear-gradient(to right, rgba(60, 142, 154, 0.9), hsla(240, 10%, 47%, 0.9), rgba(170, 75, 106, 0.9)),url(../imagenes/programming-g73a2198f0_1280.png);
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
 }
 
 .header__nav{
-    background-color: aqua;
+    background-color: whitesmoke;
     grid-area: nav;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 12vh;
+    position: fixed;
+    top: 0;
+}
+.header__nav div{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 .header__nav ul li {
     display: inline-block;
 }
 .header__menu li{
-    margin-left: 3rem;
-    position: relative;
+    margin: 0rem 2rem;
 } 
-.header__menu{
-    position: relative;
-    left: 7vw;
-}
+
 .header__redes li{
-    margin-left: 1rem;
+    margin: 0rem 0.6rem;
 }
-.header__menu li a, .header__redes li a{
+
+.header__menu li a{
     text-decoration: none;
-    color: blueviolet;
-    font-size: 1.2rem;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+}
+.header__logo{
+    text-decoration: none;
+    color: rgba(60, 142, 154, 0.9);
+    font-size: 1.4rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header__redes--insta img{
+    height: 1.1rem;
+    width: 1.1rem;
+    max-width: 100%;
+}
+.header__redes--face img{
+    height: 1.1rem;
+    width: 1.1rem;
+    max-width: 100%;
 }
 .header__texto{
-    background-color: bisque;
     grid-area: texto;
+    margin-left: 1rem;
 }
+/* Texto de caja de texto */
+.header__texto p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    color: azure;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 2;
+    margin-top: 0.8rem;
+
+}
+.header__texto h1{
+    font-style:normal;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:500;
+    color:rgb(184, 184, 184);
+    font-size: 1.5rem;
+    margin-top: 2rem;
+}
+.header__texto h2{
+    font-style:normal;
+    font-weight:500;
+    font-family: Arial, Helvetica, sans-serif;
+    word-spacing: 70%;
+    
+    color:white;
+    font-size: 4rem;
+    margin-top: 0.5rem;
+}
+/* Termina texto de caja de texto */
 .header__extra{
-    background-color: rgb(168, 124, 57);
     grid-area: extra;
+    margin-right: 1rem;
+    background-image: url(../imagenes/Asset\ selection-amico.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
 }
 
 #header__index{
+    
     display: grid;
     grid-template-areas: 
     "nav nav"
     "texto extra";
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 12vh 77vh;
-    grid-row-gap: 20px;
+    grid-template-rows: 12vh auto;
+    grid-row-gap: 6rem;
+    grid-column-gap: 1rem;
+    margin-bottom: 6rem;
 }
 
 /* Termina header */
 
 /* Empeiza Nosotros */
 #nosotros{
-    background-color: brown;
-    width: 100vw;
-    margin-top: 15vh;
+    background-color: rgba(170, 75, 106, 0.7);
+    margin-top: 25vh;
     display: flex;
     justify-content: center;
-    align-items: center;
 
 }
 .nosotros__contenedor{
-    background-color: antiquewhite;
-    width: 95vw;
+    width: 95%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 4rem 0rem;
 }
 
 .nosotros__texto{
-    background-color: aquamarine;
-    width: 50%;
-    margin-right: 2rem;
+    width: 55%;
+}
+.nosotros__texto h3,.equipo__texto h3{
+    font-style:normal;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:500;
+    color:rgba(108, 108, 132, 1);
+    font-size: 1.6rem;
+}
+.nosotros__texto p,.equipo__texto p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    color: azure;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.6;
+    margin-top: 0.8rem;
 }
 .nosotros__img{
-    background-color: darkgoldenrod;
+    background-image: url(../imagenes/pexels-tranmautritam-69432.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     width: 28rem;
-    height: 14rem;
+    height: 18rem;
+    margin-left: 1.5rem;
 }
 /* Termina Nosotros */
 
@@ -93,9 +176,9 @@ header{
 /* Epieza servicios */
 
 #servicios{
-    background-color: lavenderblush;
-    width: 100vw;
-    margin-top: 15vh;
+    background-color: rgba(60, 142, 154, 0.7);
+    width: 100%;
+    margin-top: 25vh;
 
    display: grid;
    grid-template-areas: 
@@ -106,7 +189,7 @@ header{
    "serviciosMantT"
    "serviciosMant";
    grid-template-columns: 1fr;
-   grid-template-rows: auto 45rem auto 35rem auto 45rem;
+   grid-template-rows: auto auto auto auto auto auto;
    grid-row-gap: 2rem;
 
    justify-items: center; 
@@ -114,10 +197,27 @@ header{
 }
 /* Empieza texto de servicios */
 .servicios__texto{
-    background-color: darkgray;
     grid-area: serviciosTexto;
     width: 60vw;
+    margin-top: 5rem;
 }
+.servicios__texto h3,.portafolio__titulo h3,.contacto__texto h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:500;
+    color:rgba(108, 108, 132, 1);
+    font-size: 1.6rem;
+    text-align: center;
+}
+.servicios__texto p,.portafolio__titulo p,.contacto__texto p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: azure;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.6;
+    margin-top: 0.8rem;
+    text-align: center;
+}
+
 /* Termina texto de servicios */
 /* Empieza Destacados */
 .servicios__destacados{
@@ -126,7 +226,7 @@ header{
     width: 95vw;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 25rem 25rem;
     gap: 1rem;
 }
 .servicios__destacados div{
@@ -142,9 +242,12 @@ header{
  }
 .servicios__precios--titulo{
     grid-area: precioTitulo;
-    background-color: aqua;
     position: relative;
     top: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:500;
+    color:rgba(108, 108, 132, 1);
+    font-size: 1.5rem;
 }
 .servicios__precios{
    background-color: brown;
@@ -152,7 +255,7 @@ header{
    width: 95vw;
    display: grid;
    grid-template-columns: 1fr 1fr 1fr;
-   grid-template-rows: 1fr;
+   grid-template-rows: 32rem;
    gap:1rem;
 }
 /* Termina precios */
@@ -161,9 +264,12 @@ header{
 
 .servicios__mantenimiento--titulo{
     grid-area: serviciosMantT;
-    background-color: rgb(170, 180, 26);
     position: relative;
     top: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:500;
+    color:rgba(108, 108, 132, 1);
+    font-size: 1.5rem;
 }
 .servicios__mantenimiento div{
     background-color: rgb(146, 22, 184);
@@ -175,7 +281,7 @@ header{
     width: 95vw;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 25rem 25rem;
     gap: 1rem;
 }
 
@@ -183,76 +289,96 @@ header{
 
 /* Empieza portafolio */
 #portafolio{
-    background-color: lavenderblush;
-    width: 100vw;
-    margin-top: 15vh;
+    background-color: rgb(26, 23, 24);
+    width: 100%;
+    margin-top: 25vh;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto 16rem auto;
+    grid-template-rows: auto auto auto;
     gap: 2rem;
     justify-items: center;
 }
+.portafolio__titulo{
+    margin-top: 5rem;
+}
+.portafolio__boton{
+    margin-bottom: 5rem;
+}
+.portafolio__boton a button{
+    font-size: 1.1rem;
+    width: 7rem;
+    height: 2rem;
+}
 .portafolio__galeria div{
     background-color: crimson;
+}
+.portafolio__galeria--4{
+    display: none;
 }
 .portafolio__galeria{
     background-color: aqua;
     width: 95vw;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
+    grid-template-rows: 20rem;
     grid-column-gap: 2rem;
 }
 /* Termina Portafolio */
 /* Empieza equipo */
 #equipo{
-    background-color: lavenderblush;
-    width: 100vw;
-    margin-top: 15vh;
+    background-color: rgb(51, 46, 48);
+    width: 100%;
+    margin-top: 25vh;
     display: flex;
     justify-content: center;
 }
 .equipo__contenedor{
-    background-color: rgb(196, 173, 45);
     width: 95vw;
-    margin: 2rem 0rem;
+    margin: 6rem 0rem;
     display: grid;
     grid-template-areas: 
     "equipoTexto equipoImg"
     "equipoBoton equipoImg";
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 15rem auto;
-    grid-row-gap: 2rem;
+    grid-template-columns: 1fr 0.8fr;
+    grid-template-rows: auto auto;
+    grid-row-gap: 1rem;
     grid-column-gap: 1rem;
 
 }
 .equipo__texto{
-    background-color: darkgray;
     grid-area: equipoTexto;
 }
 .equipo__img{
-    background-color: darkslateblue;
+    background-image: url(../imagenes/pexels-fauxels-3184306.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     grid-area: equipoImg;
+    height: 20rem;
     
 }
 .equipo__boton{
-    background-color: darkmagenta;
     grid-area: equipoBoton;
     display: flex;
     justify-content: center;
+    align-items: flex-start;
+}
+.equipo__boton a button{
+    font-size: 1.1rem;
+    width: 6rem;
+    height: 2rem;
 }
 /* Termina equipo */
 /* Empieza contactos */
 #contacto{
     background-color: rgb(170, 67, 101);
-    width: 100vw;
-    margin-top: 15vh;
-    margin-bottom: 15vh;
+    width: 100%;
+    margin-top: 25vh;
+    margin-bottom: 10vh;
     display: flex;
     justify-content: center;
 }
 .contacto__contenedor{
-    background-color: rgb(196, 173, 45);
     width: 95vw;
     margin: 2rem 0rem;
     display: grid;
@@ -266,18 +392,15 @@ header{
 
 }
 .contacto__mapa{
-    background-color: darkseagreen;
     grid-area: contactoMap;
     display: flex;
     justify-content: center;
 }
 .contacto__texto{
-    background-color: gainsboro;
     grid-area: contactoTexto;
 }
 /* Contacto FORMULARIO */
 .contacto__formulario{
-    background-color: darkkhaki;
     grid-area: contactoFormu;
 
     display: grid;
@@ -310,7 +433,7 @@ header{
 /* Contacto FORMULARIO */
 /* Footer */
 footer{
-    background-color: darkkhaki;
+    background-color: rgba(108, 108, 132, 1);
     margin-bottom: 0;
     display: flex;
     justify-content: center;
@@ -318,7 +441,6 @@ footer{
 }
 .footer__contenedor{
     width: 95%;
-    background-color: aqua;
     display: grid;
     grid-template-areas: 
     "footerLogo footerLogo footerLogo"
@@ -326,32 +448,71 @@ footer{
     "footerInfo footerInfo footerInfo";
     grid-template-columns: 1fr 0.5fr 1fr;
     grid-template-rows: auto 5rem auto;
+    grid-row-gap: 0.5rem;
 }
 .footer__logo{
-    background-color: darksalmon;
+    margin-top: 1rem;
     grid-area: footerLogo;
+    display: flex;
+    justify-content: center;
+}
+.footer__logo a{
+    text-decoration: none;
+    color: rgba(60, 142, 154, 0.9);
+    font-size: 1.4rem;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .footer__direcciones{
-    background-color: dimgray;
     grid-area: footerDirec;
+    display: flex;
+    justify-content: flex-start;
+}
+.footer__direcciones ul li,.footer__legales ul li{
+    color: azure;
+    margin:0.2rem 0rem;
+    font-size: 1.1rem;
 }
 .footer__redes{
-    background-color: dodgerblue;
     grid-area: footerRedes;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.footer__redes--insta img{
+    height: 1.2rem;
+    width: 1.2rem;
+    max-width: 100%;
+}
+.footer__redes--face img{
+    height: 1.2rem;
+    width: 1.2rem;
+    max-width: 100%;
 }
 .footer__redes ul li{
     display: inline-block;
     margin-left: 1rem;
 }
 .footer__legales{
-    background-color: floralwhite;
     grid-area: footerLegal;
+    display: flex;
+    justify-content: flex-end;
+}
+.footer__legales ul li a{
+    color: azure;
+    margin:0.2rem 0rem;
+    font-size: 1.1rem;
+    text-decoration: none;
 }
 .footer__info{
-    background-color: darkslategrey;
     grid-area: footerInfo;
+    display: flex;
+    justify-content: center;
+}
+.footer__info p{
+    color: azure;
+    font-size: 0.9rem;
 }
 /* Termina footer */
+
+
+
