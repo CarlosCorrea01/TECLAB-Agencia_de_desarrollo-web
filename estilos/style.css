@@ -199,7 +199,7 @@ header{
 /* Empieza texto de servicios */
 .servicios__texto{
     grid-area: serviciosTexto;
-    width: 60vw;
+    width: 70%;
     margin-top: 5rem;
 }
 .servicios__texto h3,.portafolio__titulo h3,.contacto__texto h3{
@@ -548,7 +548,7 @@ footer{
     }
     .nosotros__img{
         margin-top: 2rem;
-        width: 75%;
+        width: 80%;
         height: 20rem;
     }
     .servicios__destacados{
@@ -571,7 +571,7 @@ footer{
     }
     .portafolio__galeria{
         display: grid;
-        grid-template-columns: 0.8fr 0.8fr ;
+        grid-template-columns: 1fr 1fr ;
         grid-template-rows: 20rem 20rem;
         grid-column-gap: 2rem;
         grid-row-gap: 1rem;
@@ -594,7 +594,7 @@ footer{
     }
     .equipo__img{
         margin-top: 2rem;
-        width: 75%;
+        width: 80%;
         height: 20rem;
     }
 }
@@ -625,7 +625,6 @@ footer{
         margin-left: 2rem;
     }
     .servicios__precios{
-        height: auto;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 32rem 32rem;
@@ -641,11 +640,11 @@ footer{
         grid-row-gap: 1rem;
     }
     .contacto__mapa iframe{
-        width: 80%;
+        width: 90%;
         height: 15rem;
     }
     .contacto__contenedor{
-        width: 80%;
+        width: 90%;
     }
     .footer__redes{
         display: none;
@@ -660,6 +659,43 @@ footer{
         grid-row-gap: 0.5rem;
     }
     
+}
+
+@media (max-width: 768px){
+    .header__menu li{
+        margin: 0rem 1rem;
+    }
+    .servicios__destacados{
+        width: 80%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 20rem 20rem 20rem 20rem 20rem 20rem;
+        grid-row-gap: 1rem;
+    }
+    .servicios__precios{
+        width: 80%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 30rem 30rem 30rem;
+    }
+    
+    .portafolio__galeria--4{
+        display: none;
+    }
+    .portafolio__galeria{
+        width: 80%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 20rem 20rem 20rem;
+        grid-row-gap: 2rem;
+    }
+    .servicios__mantenimiento{
+        width: 80%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 20rem 20rem 20rem 20rem 20rem 20rem;
+        grid-row-gap: 2rem;
+    }
 }
 
 
