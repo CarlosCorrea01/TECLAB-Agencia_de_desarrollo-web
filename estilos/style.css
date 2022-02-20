@@ -225,7 +225,6 @@ header{
 /* Termina texto de servicios */
 /* Empieza Destacados */
 .servicios__destacados{
-    background-color: blue;
     grid-area: serviciosDesta;
     width: 95vw;
     display: grid;
@@ -254,7 +253,6 @@ header{
     font-size: 1.5rem;
 }
 .servicios__precios{
-   background-color: brown;
    grid-area: serviciosPre;
    width: 95vw;
    display: grid;
@@ -280,9 +278,9 @@ header{
 }
 
 .servicios__mantenimiento{
-    background-color: rgb(202, 73, 94);
     grid-area: serviciosMant;
     width: 95vw;
+    margin-bottom: 5rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 25rem 25rem;
@@ -293,7 +291,7 @@ header{
 
 /* Empieza portafolio */
 #portafolio{
-    background-color: rgb(26, 23, 24);
+    background-color: rgba(60, 142, 154, 0.7);
     width: 100%;
     margin-top: 25vh;
     display: grid;
@@ -320,7 +318,6 @@ header{
     display: none;
 }
 .portafolio__galeria{
-    background-color: aqua;
     width: 95vw;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -330,7 +327,7 @@ header{
 /* Termina Portafolio */
 /* Empieza equipo */
 #equipo{
-    background-color: rgb(51, 46, 48);
+    background-color: rgba(60, 142, 154, 0.7);
     width: 100%;
     margin-top: 25vh;
     display: flex;
