@@ -25,12 +25,13 @@ header{
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 12vh;
     position: fixed;
     top: 0;
+
 }
 .header__nav div{
     width: 90%;
+    margin: 1rem 0rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -118,7 +119,7 @@ header{
     "nav nav"
     "texto extra";
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 12vh auto;
+    grid-template-rows: auto auto;
     grid-row-gap: 6rem;
     grid-column-gap: 1rem;
     margin-bottom: 6rem;
@@ -396,6 +397,10 @@ header{
     display: flex;
     justify-content: center;
 }
+.contacto__mapa iframe{
+    width: 95%;
+    height: 95%;
+}
 .contacto__texto{
     grid-area: contactoTexto;
 }
@@ -428,7 +433,7 @@ header{
 }
 .enviar{
     grid-area: enviar;
-    width: 10%;
+    width: 20%;
 }
 /* Contacto FORMULARIO */
 /* Footer */
@@ -526,7 +531,7 @@ footer{
         "nav nav"
         "texto extra";
         grid-template-columns: 1fr 0.6fr;
-        grid-template-rows: 12vh auto;
+        grid-template-rows: auto auto;
         grid-row-gap: 6rem;
         grid-column-gap: 1rem;
         margin-bottom: 6rem;
@@ -592,6 +597,69 @@ footer{
         width: 75%;
         height: 20rem;
     }
+}
+
+@media (max-width: 908px){
+    .header__nav div{
+        display: flex;
+        flex-direction: column;
+    }
+    .header__logo{
+        margin-bottom: 0.5rem;
+    }
+    .header__extra{
+        display: none;
+    }
+    #header__index{
+        display: grid;
+        grid-template-areas: 
+        "nav nav"
+        "texto extra";
+        grid-template-columns: 1fr 0.2fr;
+        grid-template-rows: auto auto;
+        grid-row-gap: 6rem;
+        grid-column-gap: 1rem;
+        margin-bottom: 6rem;
+    }
+    .header__texto{
+        margin-left: 2rem;
+    }
+    .servicios__precios{
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 32rem 32rem;
+     }
+    .contacto__contenedor{
+        display: grid;
+        grid-template-areas: 
+        "contactoMap"
+        "contactoTexto"
+        "contactoFormu";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        grid-row-gap: 1rem;
+    }
+    .contacto__mapa iframe{
+        width: 80%;
+        height: 15rem;
+    }
+    .contacto__contenedor{
+        width: 80%;
+    }
+    .footer__redes{
+        display: none;
+    }
+    .footer__contenedor{
+        grid-template-areas: 
+        "footerLogo footerLogo footerLogo"
+        "footerDirec footerRedes footerLegal"
+        "footerInfo footerInfo footerInfo";
+        grid-template-columns: 1fr 0.01fr 1fr;
+        grid-template-rows: auto 5rem auto;
+        grid-row-gap: 0.5rem;
+    }
+    
 }
 
 
