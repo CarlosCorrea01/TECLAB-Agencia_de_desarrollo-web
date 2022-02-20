@@ -381,7 +381,7 @@ header{
 }
 .contacto__contenedor{
     width: 95vw;
-    margin: 2rem 0rem;
+    margin: 5rem 0rem;
     display: grid;
     grid-template-areas: 
     "contactoMap contactoTexto"
@@ -624,11 +624,20 @@ footer{
     .header__texto{
         margin-left: 2rem;
     }
+    .nosotros__contenedor{
+        margin: 6rem 0rem;
+    }
+    .servicios__texto{
+        margin-top: 6rem;
+    }
     .servicios__precios{
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 32rem 32rem;
-     }
+    }
+    .portafolio__titulo{
+        margin-top: 6rem;
+    }
     .contacto__contenedor{
         display: grid;
         grid-template-areas: 
@@ -695,6 +704,42 @@ footer{
         grid-template-columns: 1fr;
         grid-template-rows: 20rem 20rem 20rem 20rem 20rem 20rem;
         grid-row-gap: 2rem;
+    }
+}
+
+@media (max-width:576px){
+    .header__menu li{
+        margin: 0rem 0.3rem;
+    }
+    .header__texto h2{
+        font-size: 3.5rem;
+    }
+}
+@media (max-width:550px){
+    .header__menu li a{
+        font-size: 1rem;
+    }
+    .header__menu li{
+        margin: 0rem 0.4rem;
+    }
+    .header__texto h1{
+        font-size: 1.1rem;
+    }
+    .header__texto h2{
+        font-size: 3rem;
+    }
+    
+}
+@media (max-width:433px){
+    .header__menu li a{
+        font-size: 0.8rem;
+        font-weight: 600;
+    }
+    .header__menu li{
+        margin: 0rem 0.3rem;
+    }
+    .header__texto h2{
+        font-size: 2.8rem;
     }
 }
 
