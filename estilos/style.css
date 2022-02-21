@@ -519,6 +519,65 @@ footer{
 }
 /* Termina footer */
 
+/* Empieza conocenos */
+#conocenos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.conocenos__contenedor{
+    margin:5rem 0rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+}
+.conocenos__galeria div{
+    background-color: silver;
+
+}
+.conocenos__titulo{
+    width: 90%;
+    padding: 2rem 0rem;
+}
+.conocenos__galeria{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,30rem);
+    gap: 3rem;
+    justify-content: center;
+}
+/* empeiza mastrabajos */
+#trabajos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.trabajos__contenedor{
+    margin:5rem 0rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+}
+.trabajos__galeria div{
+    background-color: silver;
+
+}
+.trabajos__titulo{
+    width: 90%;
+    padding: 2rem 0rem;
+}
+.trabajos__galeria{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(3,15rem);
+    gap: 2rem;
+    justify-content: center;
+}
+
 /* Aplicacion de media */
 @media (max-width:990px)
 {
@@ -531,10 +590,6 @@ footer{
         "nav nav"
         "texto extra";
         grid-template-columns: 1fr 0.6fr;
-        grid-template-rows: auto auto;
-        grid-row-gap: 6rem;
-        grid-column-gap: 1rem;
-        margin-bottom: 6rem;
     }
     .nosotros__contenedor{
         display: flex;
