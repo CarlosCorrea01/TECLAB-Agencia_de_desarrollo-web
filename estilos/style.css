@@ -329,7 +329,12 @@ header{
     height: 2rem;
 }
 .portafolio__galeria div{
-    background-color: crimson;
+    background-image: url(../imagenes/pexels-fauxels-3184306.jpg);
+    border-radius: 3%;
+}
+.portafolio__galeria div:hover{
+    transform: scale(1.05);
+    transition-duration: 0.5s;
 }
 .portafolio__galeria--4{
     display: none;
@@ -584,8 +589,13 @@ footer{
 }
 .trabajos__galeria div{
     background-color: silver;
-
+    border-radius: 6%;
 }
+.trabajos__galeria div:hover{
+    transform: scale(1.1);
+    transition-duration: 1s;
+}
+
 .trabajos__titulo{
     width: 90%;
     padding: 2rem 0rem;
