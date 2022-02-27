@@ -320,13 +320,23 @@ header{
 .portafolio__titulo{
     margin-top: 5rem;
 }
-.portafolio__boton{
+.portafolio__boton {
     margin-bottom: 5rem;
 }
 .portafolio__boton a button{
     font-size: 1.1rem;
+    height: 2.3rem;
     width: 7rem;
-    height: 2rem;
+    cursor: pointer;
+    background: transparent;
+    color: azure;
+    border: solid 2px rgb(170, 67, 101) ;
+    border-radius: 10%;
+}
+.portafolio__boton a button:hover{
+    background-color: rgba(170, 67, 101, 0.6);
+    transform: scale(1.05);
+    transition-duration: 1s;
 }
 .portafolio__galeria div{
     background-image: url(../imagenes/pexels-fauxels-3184306.jpg);
@@ -388,8 +398,18 @@ header{
 }
 .equipo__boton a button{
     font-size: 1.1rem;
-    width: 6rem;
-    height: 2rem;
+    height: 2.3rem;
+    width: 7rem;
+    cursor: pointer;
+    background: transparent;
+    color: azure;
+    border: solid 2px rgb(170, 67, 101) ;
+    border-radius: 10%;
+}
+.equipo__boton a button:hover{
+    background-color: rgba(170, 67, 101, 0.6);
+    transform: scale(1.05);
+    transition-duration: 1s;
 }
 /* Termina equipo */
 /* Empieza contactos */
