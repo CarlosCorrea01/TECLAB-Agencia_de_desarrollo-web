@@ -72,6 +72,13 @@ header{
     width: 1.1rem;
     max-width: 100%;
 }
+.header__redes--insta img:hover,
+.header__redes--face img:hover,
+.footer__redes--insta img:hover,
+.footer__redes--face img:hover{
+    transform:scale(1.2);
+    transition-duration: 0.5s;
+}
 .header__redes--face img{
     height: 1.1rem;
     width: 1.1rem;
