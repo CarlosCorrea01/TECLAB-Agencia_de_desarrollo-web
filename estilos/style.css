@@ -30,6 +30,7 @@ header{
     width: 100%;
     position: fixed;
     top: 0;
+    z-index: 100;
 
 }
 .header__nav div{
@@ -139,9 +140,9 @@ header{
     "texto extra";
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
-    grid-row-gap: 6rem;
+    grid-row-gap: 8rem;
     grid-column-gap: 1rem;
-    margin-bottom: 6rem;
+    margin-bottom: 11rem;
 }
 
 /* Termina header */
