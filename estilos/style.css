@@ -118,51 +118,7 @@ header{
 
 /* Termina header */
 
-/* Empeiza Nosotros 
-#nosotros{
-    background-color: rgba(170, 75, 106, 0.7);
-    margin-top: 25vh;
-    display: flex;
-    justify-content: center;
-
-}
-.nosotros__contenedor{
-    width: 95%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 4rem 0rem;
-}
-
-.nosotros__texto{
-    width: 55%;
-}
-.nosotros__texto h3,.equipo__texto h3{
-    font-style:normal;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight:500;
-    color:rgba(108, 108, 132, 1);
-    font-size: 1.6rem;
-}
-.nosotros__texto p,.equipo__texto p{
-    font-family: Arial, Helvetica, sans-serif;
-    font-style: normal;
-    color: azure;
-    font-size: 1rem;
-    font-weight: 500;
-    line-height: 1.6;
-    margin-top: 0.8rem;
-}
-.nosotros__img{
-    background-image: url(../imagenes/pexels-tranmautritam-69432.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    width: 28rem;
-    height: 18rem;
-    margin-left: 1.5rem;
-}
-Termina Nosotros */
+/* Empeiza Nosotros */
 #nosotros{
     margin-top: 25vh;
 }
@@ -303,13 +259,10 @@ Termina Nosotros */
     grid-column-gap: 2rem;
 }
 /* Termina Portafolio */
-/* Empieza equipo 
+
+/* Empieza equipo*/
 #equipo{
-    background-color: rgba(60, 142, 154, 0.7);
-    width: 100%;
     margin-top: 25vh;
-    display: flex;
-    justify-content: center;
 }
 .equipo__contenedor{
     width: 95vw;
@@ -327,28 +280,14 @@ Termina Nosotros */
 .equipo__texto{
     grid-area: equipoTexto;
 }
-.equipo__img{
-    background-image: url(../imagenes/pexels-fauxels-3184306.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    grid-area: equipoImg;
-    height: 20rem;
-    
-}
 .equipo__boton{
     grid-area: equipoBoton;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
 }
 .equipo__boton a button{
-    font-size: 1.1rem;
     height: 2.3rem;
     width: 7rem;
     cursor: pointer;
-    background: transparent;
-    color: azure;
+    background: rgba(160, 89, 113, 0.30);
     border: solid 2px rgb(170, 67, 101) ;
     border-radius: 10%;
 }
@@ -357,14 +296,8 @@ Termina Nosotros */
     transform: scale(1.05);
     transition-duration: 1s;
 }
- Termina equipo */
- #equipo{
-    margin-top: 25vh;
-}
-.equipo__contenedor{
-    width: 97%;
-    margin: 6rem 0rem;
-}
+ /*Termina equipo */
+
 /* Empieza contactos */
 #contacto{
     margin-top: 25vh;
