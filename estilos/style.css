@@ -165,13 +165,9 @@ header{
     width: 95vw;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 25rem 25rem;
+    grid-template-rows: auto auto;
     gap: 1rem;
 }
-.servicios__destacados div{
-    background-color: bisque;
-}
-
 /* Termina Destacados */
 
 /* Empieza Precios*/
