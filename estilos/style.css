@@ -143,73 +143,59 @@ header{
    "serviciosMant";
    grid-template-columns: 1fr;
    grid-template-rows: auto auto auto auto auto auto;
-   grid-row-gap: 2rem; 
 }
 /* Empieza texto de servicios */
 
 .servicios__texto{
     grid-area: serviciosTexto;
-    margin-top: 5rem;
-}
-.servicios__texto h3,.portafolio__titulo h3,.contacto__texto h3{
-    font-size: 1.6rem;
-}
-.servicios__texto p,.portafolio__titulo p,.contacto__texto p{
-    line-height: 1.6;
 }
 
 /* Termina texto de servicios */
+
 /* Empieza Destacados */
 .servicios__destacados{
     grid-area: serviciosDesta;
-    width: 95vw;
+}
+.servicios__des--cont{
+    width: 90vw;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto auto;
-    gap: 1rem;
+    gap: 1.5rem;
 }
 /* Termina Destacados */
 
 /* Empieza Precios*/
-.servicios__precios div{
-    background-color: rgb(219, 199, 199);
-   
- }
 .servicios__precios--titulo{
     grid-area: precioTitulo;
-    position: relative;
-    top: 1.5rem;
-    font-size: 1.5rem;
 }
 .servicios__precios{
    grid-area: serviciosPre;
-   width: 95vw;
-   display: grid;
-   grid-template-columns: 1fr 1fr 1fr;
-   grid-template-rows: 32rem;
-   gap:1rem;
 }
+.servicios__pre--cont{
+    width: 90vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap:2.5rem;
+ }
 /* Termina precios */
 
 /* Empieza mantenimiento */
 
 .servicios__mantenimiento--titulo{
     grid-area: serviciosMantT;
-    position: relative;
-    top: 1.5rem;
-}
-.servicios__mantenimiento div{
-    background-color: rgb(146, 22, 184);
 }
 
 .servicios__mantenimiento{
     grid-area: serviciosMant;
-    width: 95vw;
-    margin-bottom: 5rem;
+}
+.servicios__mant--cont{
+    width: 90vw;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 25rem 25rem;
-    gap: 1rem;
+    grid-template-rows: auto auto;
+    gap: 2.5rem;
 }
 
 /* Termina servicios */
