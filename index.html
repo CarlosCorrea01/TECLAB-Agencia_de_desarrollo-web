@@ -11,6 +11,7 @@
     <!-- link animate.css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <!-- link animate.css -->
+    <script src="https://kit.fontawesome.com/6889789957.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./estilos/style.css">
     <title>Agencia de desarrollo web</title>
 </head>
@@ -21,28 +22,40 @@
 
         <div id="header__index">
 
-            <nav class="header__nav d-flex justify-content-center align-items-center w-100 position-fixed top-0 ">
+            <nav class="header__nav d-flex justify-content-center w-100 position-fixed top-0 ">
 
-                <div class="d-flex justify-content-between align-items-center">
-                    <a class="header__logo" href="index.html">
-                        <h2>TECLAB</h2>
-                    </a>
+                <div class="d-flex justify-content-between mt-2 mb-2 ">
 
-                    <ul class="header__menu d-flex justify-content-evenly ">
-                        <li class=""><a href="#nosotros">Nosotros</a></li>
-                        <li class=""><a href="#servicios">Servicios</a></li>
-                        <li class=""><a href="#portafolio">Portafolio</a></li>
-                        <li class=""><a href="#equipo">Equipo</a></li>
-                        <li class=""><a href="#contacto">Contacto</a></li>
-                    </ul>
+                    <div class="header__logo w-auto" >
+                        <a class="text-decoration-none" href="index.html">
+                            <h2>TECLAB</h2>
+                        </a>
+                    </div>
 
-                    <ul class="header__redes">
-                        <li class="d-inline-flex me-3"><a class="header__redes--insta" href="https://www.instagram.com/"
-                                target="_blank"><img src="./imagenes/instagram (1).png" alt=""></a></li>
-                        <li class="d-inline-flex "><a class="header__redes--face" href="https://www.facebook.com/"
-                                target="_blank"><img src="./imagenes/simbolo-de-la-aplicacion-de-facebook.png"
-                                    alt=""></a></li>
-                    </ul>
+                    <input type="checkbox" id="check">
+                    <label for="check" class="nav__bars">
+                        <i class="fa-solid fa-bars"></i>
+                    </label>
+
+                    <div class="header__menu w-75">
+
+                        <ul class="header__secciones d-flex w-75 justify-content-evenly">
+                            <li class=""><a class="fs-5 me-2 text-decoration-none" href="#nosotros">Nosotros</a></li>
+                            <li class=""><a class="fs-5 me-2 text-decoration-none" href="#servicios">Servicios</a></li>
+                            <li class=""><a class="fs-5 me-2 text-decoration-none" href="#portafolio">Portafolio</a></li>
+                            <li class=""><a class="fs-5 me-2 text-decoration-none" href="#equipo">Equipo</a></li>
+                            <li class=""><a class="fs-5 text-decoration-none" href="#contacto">Contacto</a></li>
+                        </ul>
+
+                        <ul class="header__redes d-flex">
+                            <li class="me-2"><a class="header__redes--insta" href="https://www.instagram.com/"
+                                    target="_blank"><i class="fa-brands fa-instagram fs-4"></i></a></li>
+                            <li class="me-2"><a class="header__redes--face" href="https://www.facebook.com/"
+                                    target="_blank"><i class="fa-brands fa-facebook fs-4"></i></a></li>
+                            <li class=" "><a class="header__redes--face" href="https://www.facebook.com/"
+                                    target="_blank"><i class="fa-brands fa-github fs-4 "></i></a></li>
+                        </ul>
+                    </div>
                 </div>
             </nav>
 
