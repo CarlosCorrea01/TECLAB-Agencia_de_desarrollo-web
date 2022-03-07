@@ -316,14 +316,19 @@ header{
 .nombre{
     grid-area: nombre;
     width: 98%;
+    padding-left: 0.5rem;
 }
 .correo{
     grid-area: correo;
     width: 98%;
+    padding-left: 0.5rem;
 }
 .msj{
     grid-area: msj;
     width: 95%;
+    padding-left: 0.5rem;
+    padding-top: 0.2rem;
+    
 }
 #boton__enviar{
     grid-area: enviar;
