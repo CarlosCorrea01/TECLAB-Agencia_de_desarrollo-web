@@ -1,0 +1,41 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    width: 100%;
+}
+
+/* Botones generales */
+a button,input#boton__enviar{
+    position: relative;
+    display: inline-block;
+    padding: 0.2rem 0.5rem;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: hsla(340, 39%, 48%, 1);
+    background: transparent;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+    border-radius: 1.8rem;
+    border: 2px solid hsla(340, 39%, 48%, 1) ;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 0 hsla(340, 39%, 48%, 1);
+}
+   
+a button:hover,input#boton__enviar:hover{
+    color: whitesmoke;
+    box-shadow: inset 0 -100px 0 0 hsla(340, 39%, 48%, 0.8);
+}
+   
+a button:active,input#boton__enviar:active{
+    transform: scale(0.9);
+}
