@@ -1,0 +1,20 @@
+.trabajos__contenedor{
+    margin:5rem 0rem;
+    width: 90%;
+    .trabajos__titulo{
+        width: 90%;
+        padding: 2rem 0rem;
+    }
+    .trabajos__galeria{
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(3,15rem);
+        gap: 2rem;
+        justify-content: center;
+        div{
+            background-color: silver;
+            border-radius: 6%;
+        }
+    }
+}

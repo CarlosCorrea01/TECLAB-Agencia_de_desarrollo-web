@@ -1,0 +1,55 @@
+#servicios{
+    margin-top: 25vh;
+    .servicios__contenedor{
+        display: grid;
+       grid-template-areas: 
+       "serviciosTexto"
+       "serviciosDesta"
+       "precioTitulo"
+       "serviciosPre"
+       "serviciosMantT"
+       "serviciosMant";
+       grid-template-columns: 1fr;
+       grid-template-rows: auto auto auto auto auto auto;
+       .servicios__texto{
+            grid-area: serviciosTexto;
+        }
+        .servicios__destacados{
+            grid-area: serviciosDesta;
+            .servicios__des--cont{
+                width: 90vw;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: auto auto;
+                gap: 1.5rem;
+            }
+        }
+        .servicios__precios--titulo{
+            grid-area: precioTitulo;
+        }
+        .servicios__precios{
+            grid-area: serviciosPre;
+            .servicios__pre--cont{
+                width: 90vw;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: auto;
+                gap:2.5rem;
+             }
+        }
+        .servicios__mantenimiento--titulo{
+            grid-area: serviciosMantT;
+        }
+        .servicios__mantenimiento{
+            grid-area: serviciosMant;
+            .servicios__mant--cont{
+                width: 90vw;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: auto auto;
+                gap: 2.5rem;
+            }
+        }
+       
+    }
+}

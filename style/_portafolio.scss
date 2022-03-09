@@ -1,0 +1,26 @@
+#portafolio{
+    margin-top: 25vh;
+    .portafolio__contenedor{
+        margin:5rem 0rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        gap: 2rem;
+        .portafolio__galeria{
+            width: 95vw;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: auto;
+            grid-column-gap: 2rem;
+            div{
+                &:hover{
+                    transform: scale(1.05);
+                    transition-duration: 0.5s;
+                }
+            }
+            .portafolio__galeria--4{
+                display: none;
+            }
+        }
+    }
+}

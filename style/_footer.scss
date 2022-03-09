@@ -1,0 +1,77 @@
+footer{
+    background-color: rgba(108, 108, 132, 1);
+    margin-bottom: 0;
+    .footer__contenedor{
+        width: 95%;
+        display: grid;
+        grid-template-areas: 
+        "footerLogo footerLogo footerLogo"
+        "footerDirec footerRedes footerLegal"
+        "footerInfo footerInfo footerInfo";
+        grid-template-columns: 1fr 0.5fr 1fr;
+        grid-template-rows: auto 5rem auto;
+        grid-row-gap: 0.5rem;
+        .footer__logo{
+            margin-top: 1rem;
+            grid-area: footerLogo;
+            a{
+                text-decoration: none;
+                color: rgba(60, 142, 154, 0.9);
+                font-size: 1.4rem;
+                &:hover{
+                    transform: scale(1.2);
+                    transition-duration: 0.4s;
+                }
+            }
+        }
+        .footer__direcciones{
+            grid-area: footerDirec;
+            ul{
+                li{
+                    color: azure;
+                    margin:0.2rem 0rem;
+                    font-size: 1.1rem;
+                }
+            }
+        }
+        .footer__redes{
+            grid-area: footerRedes;
+            ul{
+                li{
+                    a{
+                        i{
+                            color: black;
+                            &:hover{
+                                transform: scale(1.2);
+                                transition-duration: .4s;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .footer__legales{
+            grid-area: footerLegal;
+            ul{
+                li{
+                    a{
+                        color: azure;
+                        margin:0.2rem 0rem;
+                        font-size: 1.1rem;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+        .footer__info{
+            grid-area: footerInfo;
+            display: flex;
+            justify-content: center;
+            p{
+                color: azure;
+            }
+        }
+
+    }
+
+}

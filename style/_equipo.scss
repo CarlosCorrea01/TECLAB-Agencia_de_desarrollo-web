@@ -1,0 +1,21 @@
+#equipo{
+    margin-top: 25vh;
+    .equipo__contenedor{
+        width: 95vw;
+        margin: 6rem 0rem;
+        display: grid;
+        grid-template-areas: 
+        "equipoTexto equipoImg"
+        "equipoBoton equipoImg";
+        grid-template-columns: 1fr 0.8fr;
+        grid-template-rows: auto auto;
+        grid-row-gap: 1rem;
+        grid-column-gap: 1rem;
+        .equipo__texto{
+            grid-area: equipoTexto;
+        }
+        .equipo__boton{
+            grid-area: equipoBoton;
+        }
+    }
+}

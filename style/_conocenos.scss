@@ -1,0 +1,19 @@
+.conocenos__contenedor{
+    margin:5rem 0rem;
+    width: 90%;
+    .conocenos__titulo{
+        width: 90%;
+        padding: 2rem 0rem;
+    }
+    .conocenos__galeria{
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(2,30rem);
+        gap: 3rem;
+        justify-content: center;
+        div{
+            background-color: silver;
+        }
+    }
+}
