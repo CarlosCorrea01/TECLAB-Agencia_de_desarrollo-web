@@ -21,19 +21,19 @@ a button,input#boton__enviar{
     font-weight: 600;
     letter-spacing: 1px;
     text-decoration: none;
-    color: hsla(340, 39%, 48%, 1);
-    background: transparent;
+    color: $Primario_1;
+    background: $ColorAcento;
     cursor: pointer;
     transition: ease-out 0.5s;
     border-radius: 1.8rem;
-    border: 2px solid hsla(340, 39%, 48%, 1) ;
+    border: 2px solid $Primario_1;
     border-radius: 10px;
-    box-shadow: inset 0 0 0 0 hsla(340, 39%, 48%, 1);
+    box-shadow: inset 0 0 0 0 $ColorPri_1;
 }
    
 a button:hover,input#boton__enviar:hover{
-    color: whitesmoke;
-    box-shadow: inset 0 -100px 0 0 hsla(340, 39%, 48%, 0.8);
+    color: $ColorPri_1;
+    box-shadow: inset 0 -100px 0 0 $ColorSecu;
 }
    
 a button:active,input#boton__enviar:active{

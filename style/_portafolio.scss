@@ -6,6 +6,14 @@
         grid-template-columns: 1fr;
         grid-template-rows: auto auto auto;
         gap: 2rem;
+        div{
+            h3{
+                color: $ColorAcento;
+            }
+            p{
+                color: $ColorSecu;
+            }
+        }
         .portafolio__galeria{
             width: 95vw;
             display: grid;

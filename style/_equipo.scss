@@ -1,8 +1,8 @@
 #equipo{
     margin-top: 25vh;
+    background-color: $Primario_1;
     .equipo__contenedor{
         width: 95vw;
-        margin: 6rem 0rem;
         display: grid;
         grid-template-areas: 
         "equipoTexto equipoImg"
@@ -11,8 +11,16 @@
         grid-template-rows: auto auto;
         grid-row-gap: 1rem;
         grid-column-gap: 1rem;
+        padding-top: 5rem;
+        padding-bottom: 2rem;
         .equipo__texto{
             grid-area: equipoTexto;
+            h3{
+                color: $ColorAcento;
+            }
+            p{
+                color: $ColorSecu;
+            }
         }
         .equipo__boton{
             grid-area: equipoBoton;

@@ -1,6 +1,6 @@
 #general__nav{
     height: 4rem;
-    background-color: whitesmoke;
+    background-color: $ColorSecu;
     grid-area: nav;
     z-index: 100;
     div{
@@ -8,7 +8,7 @@
         .header__logo{
             a{
                 h2{
-                    color: rgba(60, 142, 154, 1);
+                    color: $ColorPri_2;
                     &:hover{
                         transform: scale(1.2);
                         transition-duration: .4s;
@@ -31,9 +31,9 @@
             .header__secciones{
                 li{
                     a{
-                        color: black;
+                        color: $ColorPri_1;
                         &:hover{
-                            color:hsla(340, 39%, 48%, 1) ;
+                            color:$ColorPri_2 ;
                             transition-duration: .2s;
                         }
                     }
@@ -43,7 +43,7 @@
                 li{
                     a{
                         i{
-                            color: black;
+                            color: $ColorPri_2;
                             &:hover{
                                 transform: scale(1.2);
                                 transition-duration: .4s;

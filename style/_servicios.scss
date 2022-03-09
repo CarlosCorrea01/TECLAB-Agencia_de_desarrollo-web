@@ -13,41 +13,94 @@
        grid-template-rows: auto auto auto auto auto auto;
        .servicios__texto{
             grid-area: serviciosTexto;
+            background-color: $Primario_1;
+            h3{
+                color: $ColorAcento;
+            }
+            p{
+                color: $ColorSecu;
+            }
         }
         .servicios__destacados{
             grid-area: serviciosDesta;
+            background-color: $Primario_1;
             .servicios__des--cont{
                 width: 90vw;
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr;
                 grid-template-rows: auto auto;
                 gap: 1.5rem;
+                div{
+                    h3{
+                        color: $ColorAcento;
+                    }
+                    p{
+                        color: $ColorSecu;
+                    }
+                }
             }
         }
         .servicios__precios--titulo{
             grid-area: precioTitulo;
+            margin-top: 10rem;
+            padding: 1rem 0rem;
+            background-color: $Secundario_1;
+            h3{
+                color: $ColorPri_2;
+            }
         }
         .servicios__precios{
             grid-area: serviciosPre;
+            background-color: $Secundario_1;
             .servicios__pre--cont{
                 width: 90vw;
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr;
                 grid-template-rows: auto;
                 gap:2.5rem;
+                div{
+                    background-color: $ColorPri_2;
+                    div{
+                        color: $ColorAcento;
+                    }
+                    ul{
+                        color: $ColorSecu;
+                        li{
+                            list-style:circle;
+                        }
+                    }
+                }
              }
         }
         .servicios__mantenimiento--titulo{
             grid-area: serviciosMantT;
+            margin-top: 10rem;
+            padding: 1rem 0rem;
+            background-color: $Primario_1;
+            border-bottom: .5px solid $Secundario_1;
+            h3{
+                color: $ColorAcento;
+            }
         }
         .servicios__mantenimiento{
             grid-area: serviciosMant;
+            background-color: $Primario_1;
             .servicios__mant--cont{
                 width: 90vw;
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr;
                 grid-template-rows: auto auto;
                 gap: 2.5rem;
+                div{
+                    div{
+                        h3{
+                            color: $ColorAcento ;
+                        }
+                    }
+                    p{
+                        color: $ColorSecu;
+                    }
+                }
             }
         }
        

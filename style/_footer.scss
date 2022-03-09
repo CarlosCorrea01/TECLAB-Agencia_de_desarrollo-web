@@ -1,5 +1,5 @@
 footer{
-    background-color: rgba(108, 108, 132, 1);
+    background-color: $ColorSecu;
     margin-bottom: 0;
     .footer__contenedor{
         width: 95%;
@@ -16,7 +16,7 @@ footer{
             grid-area: footerLogo;
             a{
                 text-decoration: none;
-                color: rgba(60, 142, 154, 0.9);
+                color: $ColorPri_2;
                 font-size: 1.4rem;
                 &:hover{
                     transform: scale(1.2);
@@ -28,7 +28,7 @@ footer{
             grid-area: footerDirec;
             ul{
                 li{
-                    color: azure;
+                    color: $ColorPri_1;
                     margin:0.2rem 0rem;
                     font-size: 1.1rem;
                 }
@@ -40,7 +40,7 @@ footer{
                 li{
                     a{
                         i{
-                            color: black;
+                            color: $ColorPri_2;
                             &:hover{
                                 transform: scale(1.2);
                                 transition-duration: .4s;
@@ -55,7 +55,7 @@ footer{
             ul{
                 li{
                     a{
-                        color: azure;
+                        color: $ColorPri_1;
                         margin:0.2rem 0rem;
                         font-size: 1.1rem;
                         text-decoration: none;
@@ -68,7 +68,7 @@ footer{
             display: flex;
             justify-content: center;
             p{
-                color: azure;
+                color: $ColorPri_2;
             }
         }
 

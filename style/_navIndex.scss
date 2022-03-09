@@ -1,7 +1,5 @@
 header{
-    background: hsla(340, 39%, 48%, 0.9);  
-    background: -webkit-linear-gradient(to right, rgba(60, 142, 154, 0.9), rgba(108, 108, 132, 0.8), hsla(340, 39%, 48%, 0.9));  
-    background: linear-gradient(to right, rgba(60, 142, 154, 0.9), hsla(240, 10%, 47%, 0.9), rgba(170, 75, 106, 0.9)),url(../imagenes/programming-g73a2198f0_1280.png);
+    background: linear-gradient(to right,$Primario_2, $Primario_2, $Primario_2),url(../imagenes/programming-g73a2198f0_1280.png);
     width: 100%;
     height: auto;
     #header__index{
@@ -15,7 +13,7 @@ header{
         padding-bottom: 8rem;
         nav{
             height: 4rem;
-            background-color: whitesmoke;
+            background-color: $ColorSecu;
             grid-area: nav;
             z-index: 100;
             div{
@@ -23,7 +21,7 @@ header{
                 .nav__logo{
                     a{
                         h2{
-                            color: rgba(60, 142, 154, 1);
+                            color: $ColorPri_2;
                             &:hover{
                                 transform: scale(1.2);
                                 transition-duration: .4s;
@@ -46,9 +44,9 @@ header{
                     .nav__secciones{
                         li{
                             a{
-                                color: black;
+                                color: $ColorPri_1;
                                 &:hover{
-                                    color:hsla(340, 39%, 48%, 1) ;
+                                    color:$ColorPri_2;
                                     transition-duration: .2s;
                                 }
                             }
@@ -58,7 +56,7 @@ header{
                         li{
                             a{
                                 i{
-                                    color: black;
+                                    color:$ColorPri_2;
                                     &:hover{
                                         transform: scale(1.2);
                                         transition-duration: .4s;
@@ -79,18 +77,18 @@ header{
             grid-area: texto;
             margin-left: 1rem;
             h1{
-                color:rgb(184, 184, 184);
+                color:$ColorAcento;
                 font-size: 1.5rem;
                 margin-top: 2rem;
             }
             h2{
                 font-weight:500;
                 word-spacing: 70%;
-                color:white;
+                color:$ColorSecu;
                 font-size: 4rem;
             }
             p{
-                color: azure;
+                color: $ColorSecu;
                 line-height: 2;
             }
         }
