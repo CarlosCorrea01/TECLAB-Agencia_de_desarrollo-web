@@ -1,0 +1,62 @@
+#general__nav{
+    height: 4rem;
+    background-color: whitesmoke;
+    grid-area: nav;
+    z-index: 100;
+    div{
+        width: 90%;
+        .header__logo{
+            a{
+                h2{
+                    color: rgba(60, 142, 154, 1);
+                    &:hover{
+                        transform: scale(1.2);
+                        transition-duration: .4s;
+                    }
+                }
+            }
+        }
+        #check{
+            display: none;
+        }
+        .nav__bars{
+            font-size:1.5rem;
+            cursor: pointer;
+            display: none;
+        }
+        .header__menu{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .header__secciones{
+                li{
+                    a{
+                        color: black;
+                        &:hover{
+                            color:hsla(340, 39%, 48%, 1) ;
+                            transition-duration: .2s;
+                        }
+                    }
+                }
+            }
+            .header__redes{
+                li{
+                    a{
+                        i{
+                            color: black;
+                            &:hover{
+                                transform: scale(1.2);
+                                transition-duration: .4s;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .w-75{
+            width: 85% !important;
+        } 
+    }
+
+
+}

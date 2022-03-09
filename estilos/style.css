@@ -35,6 +35,41 @@ a button:hover, input#boton__enviar:hover {
 a button:active, input#boton__enviar:active {
   transform: scale(0.9); }
 
+#general__nav {
+  height: 4rem;
+  background-color: whitesmoke;
+  grid-area: nav;
+  z-index: 100; }
+  #general__nav div {
+    width: 90%; }
+    #general__nav div .header__logo a h2 {
+      color: #3c8e9a; }
+      #general__nav div .header__logo a h2:hover {
+        transform: scale(1.2);
+        transition-duration: .4s; }
+    #general__nav div #check {
+      display: none; }
+    #general__nav div .nav__bars {
+      font-size: 1.5rem;
+      cursor: pointer;
+      display: none; }
+    #general__nav div .header__menu {
+      display: flex;
+      align-items: center;
+      justify-content: space-between; }
+      #general__nav div .header__menu .header__secciones li a {
+        color: black; }
+        #general__nav div .header__menu .header__secciones li a:hover {
+          color: #aa4b6a;
+          transition-duration: .2s; }
+      #general__nav div .header__menu .header__redes li a i {
+        color: black; }
+        #general__nav div .header__menu .header__redes li a i:hover {
+          transform: scale(1.2);
+          transition-duration: .4s; }
+    #general__nav div .w-75 {
+      width: 85% !important; }
+
 header {
   background: rgba(170, 75, 106, 0.9);
   background: -webkit-linear-gradient(to right, rgba(60, 142, 154, 0.9), rgba(108, 108, 132, 0.8), rgba(170, 75, 106, 0.9));
@@ -56,9 +91,9 @@ header {
       z-index: 100; }
       header #header__index nav div {
         width: 90%; }
-        header #header__index nav div .header__logo a h2 {
+        header #header__index nav div .nav__logo a h2 {
           color: #3c8e9a; }
-          header #header__index nav div .header__logo a h2:hover {
+          header #header__index nav div .nav__logo a h2:hover {
             transform: scale(1.2);
             transition-duration: .4s; }
         header #header__index nav div #check {
@@ -67,18 +102,18 @@ header {
           font-size: 1.5rem;
           cursor: pointer;
           display: none; }
-        header #header__index nav div .header__menu {
+        header #header__index nav div .nav__menu {
           display: flex;
           align-items: center;
           justify-content: space-between; }
-          header #header__index nav div .header__menu .header__secciones li a {
+          header #header__index nav div .nav__menu .nav__secciones li a {
             color: black; }
-            header #header__index nav div .header__menu .header__secciones li a:hover {
+            header #header__index nav div .nav__menu .nav__secciones li a:hover {
               color: #aa4b6a;
               transition-duration: .2s; }
-          header #header__index nav div .header__menu .header__redes li a i {
+          header #header__index nav div .nav__menu .nav__redes li a i {
             color: black; }
-            header #header__index nav div .header__menu .header__redes li a i:hover {
+            header #header__index nav div .nav__menu .nav__redes li a i:hover {
               transform: scale(1.2);
               transition-duration: .4s; }
         header #header__index nav div .w-75 {
@@ -238,7 +273,7 @@ footer {
     display: grid;
     grid-template-areas: "footerLogo footerLogo footerLogo" "footerDirec footerRedes footerLegal" "footerInfo footerInfo footerInfo";
     grid-template-columns: 1fr 0.5fr 1fr;
-    grid-template-rows: auto 5rem auto;
+    grid-template-rows: auto auto auto;
     grid-row-gap: 0.5rem; }
     footer .footer__contenedor .footer__logo {
       margin-top: 1rem;
@@ -311,69 +346,91 @@ footer {
       border-radius: 6%; }
 
 @media (max-width: 992px) {
-  #header__index {
+  header #header__index {
     grid-template-columns: 1fr 0.7fr; }
-  .nosotros__img {
-    width: 90%; }
-  .nosotros__contenedor div div {
+  #nosotros .nosotros__contenedor div div {
     align-items: center; }
-  .nosotros__contenedor div div h3, .nosotros__contenedor div div p {
-    text-align: center;
-    width: 90%; }
-  .servicios__des--cont {
+    #nosotros .nosotros__contenedor div div p {
+      width: 90%;
+      text-align: center; }
+    #nosotros .nosotros__contenedor div div img {
+      width: 90%; }
+  #servicios .servicios__contenedor .servicios__destacados .servicios__des--cont {
+    width: 90vw;
+    display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto auto;
     gap: 2.5rem; }
-  .servicios__mant--cont {
+  #servicios .servicios__contenedor .servicios__mantenimiento .servicios__mant--cont {
+    width: 90vw;
+    display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto auto;
     gap: 3rem; }
-  .portafolio__galeria--4 {
-    display: block; }
-  .portafolio__galeria {
+  #portafolio .portafolio__contenedor .portafolio__galeria {
+    width: 95vw;
+    display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
     grid-column-gap: 2rem;
     grid-row-gap: 1rem; }
-  .equipo__contenedor {
+    #portafolio .portafolio__contenedor .portafolio__galeria .portafolio__galeria--4 {
+      display: block; }
+  #equipo .equipo__contenedor {
     grid-template-areas: "equipoTexto" "equipoImg" "equipoBoton";
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto;
     justify-items: center; }
-  .equipo__texto {
-    width: 90%; }
-  .equipo__texto p, .equipo__texto h3 {
-    text-align: center; }
-  .equipo__img {
-    width: 90%; }
-  .conocenos__galeria {
+    #equipo .equipo__contenedor .equipo__texto {
+      width: 90%; }
+      #equipo .equipo__contenedor .equipo__texto p {
+        text-align: center; }
+      #equipo .equipo__contenedor .equipo__texto h3 {
+        text-align: center; }
+    #equipo .equipo__contenedor .equipo__img {
+      width: 90%; }
+  .conocenos__contenedor .conocenos__galeria {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 30rem); }
-  .trabajos__galeria {
+  .trabajos__contenedor .trabajos__galeria {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, 15rem); } }
 
 @media (max-width: 900px) {
-  .header__extra {
-    display: none; }
-  #header__index {
+  header #header__index {
     grid-template-columns: 1fr 0.3fr; }
-  .nav__bars {
+    header #header__index nav div .nav__bars {
+      display: block; }
+    header #header__index nav div #check:checked ~ .nav__menu {
+      height: 50vh; }
+    header #header__index nav div #check:checked ~ .nav__menu {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: fixed;
+      top: 4rem;
+      right: 0;
+      background-color: rgba(245, 245, 245, 0.95); }
+    header #header__index nav div .nav__menu {
+      display: none; }
+    header #header__index nav div .nav__secciones {
+      height: 90%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between; }
+      header #header__index nav div .nav__secciones li a:hover {
+        color: #aa4b6a;
+        transition-duration: .3s; }
+    header #header__index .header__extra {
+      display: none; }
+  #general__nav div .nav__bars {
     display: block; }
-  .header__menu {
+  #general__nav div .header__menu {
     display: none; }
-  .header__secciones {
-    height: 90%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between; }
-  .header__secciones li a:hover {
-    color: #aa4b6a;
-    transition-duration: .3s; }
-  #check:checked ~ .header__menu {
+  #general__nav div #check:checked ~ .header__menu {
     height: 50vh; }
-  #check:checked ~ .header__menu {
+  #general__nav div #check:checked ~ .header__menu {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -381,51 +438,63 @@ footer {
     top: 4rem;
     right: 0;
     background-color: rgba(245, 245, 245, 0.95); }
-  .contacto__contenedor {
+  #general__nav div .header__menu {
+    display: none; }
+  #general__nav div .header__secciones {
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; }
+    #general__nav div .header__secciones li a:hover {
+      color: #aa4b6a;
+      transition-duration: .3s; }
+  #contacto .contacto__contenedor {
     grid-template-areas: "contactoMap" "contactoTexto" "contactoFormu";
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto;
     grid-row-gap: 1rem;
     width: 90%; }
-  .contacto__mapa iframe {
-    height: 15rem; }
-  .servicios__pre--cont {
+    #contacto .contacto__contenedor .contacto__mapa {
+      grid-area: contactoMap; }
+      #contacto .contacto__contenedor .contacto__mapa iframe {
+        height: 15rem; }
+  #servicios .servicios__contenedor .servicios__precios .servicios__pre--cont {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto; }
-  .trabajos__galeria {
+  .trabajos__contenedor .trabajos__galeria {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(6, 15rem); } }
 
 @media (max-width: 768px) {
-  .servicios__des--cont {
-    width: 90%;
+  #servicios .servicios__contenedor .servicios__destacados .servicios__des--cont {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto auto auto auto; }
-  .servicios__mant--cont {
+  #servicios .servicios__contenedor .servicios__mantenimiento .servicios__mant--cont {
     width: 70%;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto auto auto auto;
     gap: 3rem; }
-  .servicios__pre--cont {
+  #servicios .servicios__contenedor .servicios__precios .servicios__pre--cont {
     width: 70%;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto; }
-  .portafolio__galeria--4 {
-    display: none; }
-  .portafolio__galeria {
+  #portafolio .portafolio__contenedor .portafolio__galeria {
     width: 80%;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto; }
-  .footer__redes {
-    display: none !important; }
-  .footer__contenedor {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto; }
-  .conocenos__galeria {
+    #portafolio .portafolio__contenedor .portafolio__galeria .portafolio__galeria--4 {
+      display: none; }
+  footer .footer__contenedor {
+    grid-template-columns: 1fr 1.5rem 1fr;
+    grid-template-rows: auto auto auto; }
+    footer .footer__contenedor .footer__redes {
+      display: none !important; }
+  .conocenos__contenedor .conocenos__galeria {
     width: 80%;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(6, 30rem); }
-  .trabajos__galeria {
+  .trabajos__contenedor .trabajos__galeria {
     width: 80%;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(12, 20rem); } }

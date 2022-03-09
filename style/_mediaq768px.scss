@@ -1,0 +1,66 @@
+@media (max-width:768px){
+    #servicios{
+        .servicios__contenedor{
+            .servicios__destacados{
+                .servicios__des--cont{
+                    grid-template-columns: 1fr ;
+                    grid-template-rows: auto auto auto auto auto auto;
+                }
+            }
+            .servicios__mantenimiento{
+                .servicios__mant--cont{
+                    width: 70%;
+                    grid-template-columns: 1fr ;
+                    grid-template-rows: auto auto auto auto auto auto;
+                    gap: 3rem;
+                }
+            }
+            .servicios__precios{
+                .servicios__pre--cont{
+                    width: 70%;
+                    grid-template-columns: 1fr ;
+                    grid-template-rows: auto auto auto;
+                }
+            }
+        }    
+    }
+
+    #portafolio{
+        .portafolio__contenedor{
+            .portafolio__galeria{
+                width: 80%;
+                grid-template-columns: 1fr;
+                grid-template-rows: auto auto auto;
+                .portafolio__galeria--4{
+                    display: none;
+                }
+            }
+        }
+    }
+
+    footer{
+        .footer__contenedor{
+            grid-template-columns: 1fr 1.5rem 1fr;
+            grid-template-rows: auto auto auto;
+            .footer__redes{
+                display: none !important;
+            }
+        }
+    }
+    
+    .conocenos__contenedor{
+        .conocenos__galeria{
+            width: 80%;
+            grid-template-columns: repeat(1,1fr);
+            grid-template-rows: repeat(6,30rem);
+        }
+    }
+    .trabajos__contenedor{
+        .trabajos__galeria{
+            width: 80%;
+            grid-template-columns: repeat(1,1fr);
+            grid-template-rows: repeat(12,20rem);
+        }
+    }
+
+}

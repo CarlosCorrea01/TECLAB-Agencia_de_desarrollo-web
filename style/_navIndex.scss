@@ -20,7 +20,7 @@ header{
             z-index: 100;
             div{
                 width: 90%;
-                .header__logo{
+                .nav__logo{
                     a{
                         h2{
                             color: rgba(60, 142, 154, 1);
@@ -39,11 +39,11 @@ header{
                     cursor: pointer;
                     display: none;
                 }
-                .header__menu{
+                .nav__menu{
                     display: flex;
                     align-items: center;
                     justify-content: space-between;
-                    .header__secciones{
+                    .nav__secciones{
                         li{
                             a{
                                 color: black;
@@ -54,7 +54,7 @@ header{
                             }
                         }
                     }
-                    .header__redes{
+                    .nav__redes{
                         li{
                             a{
                                 i{
