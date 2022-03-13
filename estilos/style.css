@@ -345,11 +345,12 @@ footer {
         font-size: 1.1rem; }
     footer .footer__contenedor .footer__redes {
       grid-area: footerRedes; }
-      footer .footer__contenedor .footer__redes ul li a i {
-        color: #E0DDAA; }
-        footer .footer__contenedor .footer__redes ul li a i:hover {
-          transform: scale(1.2);
-          transition-duration: .4s; }
+      footer .footer__contenedor .footer__redes ul li a .red__instagram {
+        color: #C25E30; }
+      footer .footer__contenedor .footer__redes ul li a .red__facebook {
+        color: #3b5998; }
+      footer .footer__contenedor .footer__redes ul li a .red__github {
+        color: white; }
     footer .footer__contenedor .footer__legales {
       grid-area: footerLegal; }
       footer .footer__contenedor .footer__legales ul li a {

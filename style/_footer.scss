@@ -39,11 +39,21 @@ footer{
             ul{
                 li{
                     a{
-                        i{
-                            color: $ColorPri_2;
-                            &:hover{
-                                transform: scale(1.2);
-                                transition-duration: .4s;
+                        // i{
+                        //     color: $ColorPri_2;
+                        //     &:hover{
+                        //         transform: scale(1.2);
+                        //         transition-duration: .4s;
+                        //     }
+                        // }
+                        $redes:(
+                            instagram: #C25E30,
+                            facebook: #3b5998 ,
+                            github: white,
+                        );
+                        @each $red,$color in $redes {
+                            .red__#{$red}{
+                                color: $color;
                             }
                         }
                     }
