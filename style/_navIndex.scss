@@ -55,12 +55,31 @@ header{
                     .nav__redes{
                         li{
                             a{
-                                i{
-                                    color:$ColorPri_2;
+                                // i{
+                                //     color:$ColorPri_2;
+                                //     &:hover{
+                                //         transform: scale(1.2);
+                                //         transition-duration: .4s;
+                                //     }
+                                // }
+                                .header__red{
+                                    color: $ColorPri_2 ;
                                     &:hover{
                                         transform: scale(1.2);
                                         transition-duration: .4s;
                                     }
+                                }    
+                                .header__red--insta{
+                                    @extend .header__red;
+                                    font-size: 1.2rem;
+                                }
+                                .header__red--face{
+                                    @extend .header__red;
+                                    font-size: 1.5rem;
+                                }
+                                .header__red--git{
+                                    @extend .header__red;
+                                    font-size: 2rem;
                                 }
                             }
                         }
