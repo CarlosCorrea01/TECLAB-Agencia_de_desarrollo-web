@@ -14,11 +14,13 @@
        .servicios__texto{
             grid-area: serviciosTexto;
             background-color: $Primario_1;
-            h3{
-                color: $ColorAcento;
+            .servicios__titulo{
+                @include fuentes (1.8rem,$ColorAcento,600);
+                font-family: 'Josefin Sans', sans-serif;
             }
             p{
-                color: $ColorSecu;
+                @include fuentes (1.1rem,black,400);
+                font-family: 'Josefin Sans', sans-serif;
             }
         }
         .servicios__destacados{
@@ -32,10 +34,12 @@
                 gap: 1.5rem;
                 div{
                     h3{
-                        color: $ColorAcento;
+                        @include fuentes (1.7rem,$ColorAcento,400);
+                        font-family: 'Josefin Sans', sans-serif;
                     }
                     p{
-                        color: $ColorSecu;
+                        @include fuentes (1.1rem,black,400);
+                        font-family: 'Josefin Sans', sans-serif;
                     }
                 }
             }
@@ -44,14 +48,13 @@
             grid-area: precioTitulo;
             margin-top: 10rem;
             padding: 1rem 0rem;
-            background-color: $Secundario_1;
-            h3{
-                color: $ColorPri_2;
+            p{
+                @include fuentes (1.8rem,$ColorAcento,600);
+                font-family: 'Josefin Sans', sans-serif;
             }
         }
         .servicios__precios{
             grid-area: serviciosPre;
-            background-color: $Secundario_1;
             .servicios__pre--cont{
                 width: 90vw;
                 display: grid;
@@ -61,12 +64,17 @@
                 div{
                     background-color: $ColorPri_2;
                     div{
-                        color: $ColorAcento;
+                        p{
+                            @include fuentes (1.7rem,$ColorPri_1,600);
+                            font-family: 'Josefin Sans', sans-serif;
+                        }
                     }
                     ul{
                         color: $ColorSecu;
                         li{
                             list-style:circle;
+                            @include fuentes (1.1rem,black,400);
+                            font-family: 'Josefin Sans', sans-serif;
                         }
                     }
                 }
@@ -77,9 +85,9 @@
             margin-top: 10rem;
             padding: 1rem 0rem;
             background-color: $Primario_1;
-            border-bottom: .5px solid $Secundario_1;
             h3{
-                color: $ColorAcento;
+                @include fuentes (1.8rem,$ColorAcento,600);
+                font-family: 'Josefin Sans', sans-serif;
             }
         }
         .servicios__mantenimiento{
@@ -94,11 +102,13 @@
                 div{
                     div{
                         h3{
-                            color: $ColorAcento ;
+                            @include fuentes (1.7rem,$ColorAcento,400);
+                            font-family: 'Josefin Sans', sans-serif;
                         }
                     }
                     p{
-                        color: $ColorSecu;
+                        @include fuentes (1.1rem,black,400);
+                        font-family: 'Josefin Sans', sans-serif;
                     }
                 }
             }

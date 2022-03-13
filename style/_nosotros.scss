@@ -5,11 +5,13 @@
         margin: 6rem 0rem;
         div{
             div{
-                h3{
-                    color: $ColorAcento;
+                .nosotros__titulo{
+                    @include fuentes (1.8rem,$ColorAcento,600)
+                    font-family: 'Josefin Sans', sans-serif;
                 }
                 p{
-                    color: $ColorSecu;
+                    @include fuentes (1.1rem,black,400)
+                    font-family: 'Josefin Sans', sans-serif;
                 }
             }
         }

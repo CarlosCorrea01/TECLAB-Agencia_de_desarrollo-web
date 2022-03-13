@@ -8,11 +8,12 @@
         .header__logo{
             a{
                 h2{
-                    color: $ColorPri_2;
-                    &:hover{
-                        transform: scale(1.2);
-                        transition-duration: .4s;
-                    }
+                    @include fuentes (2rem,$ColorPri_1,600);
+                    font-family: 'Josefin Sans', sans-serif;
+                        &:hover{
+                            transform: scale(1.2);
+                            transition-duration: .4s;
+                            }
                 }
             }
         }
@@ -31,11 +32,12 @@
             .header__secciones{
                 li{
                     a{
-                        color: $ColorPri_1;
-                        &:hover{
-                            color:$ColorPri_2 ;
-                            transition-duration: .2s;
-                        }
+                        @include fuentes (1rem,$ColorPri_1,400);
+                        font-family: 'Josefin Sans', sans-serif;
+                            &:hover{
+                                 color:$ColorAcento;
+                                 transition-duration: .2s;
+                            }
                     }
                 }
             }
@@ -43,7 +45,7 @@
                 li{
                     a{
                         i{
-                            color: $ColorPri_2;
+                            color: $ColorPri_1;
                             &:hover{
                                 transform: scale(1.2);
                                 transition-duration: .4s;

@@ -21,11 +21,13 @@
         }
         .contacto__texto{
             grid-area: contactoTexto;
-            h3{
-                color: $ColorAcento;
+            .contacto__titulo{
+                @include fuentes (1.8rem,$ColorAcento,600);
+                font-family: 'Josefin Sans', sans-serif;
             }
             p{
-                color: $ColorSecu;
+                @include fuentes (1.1rem,black,400);
+                font-family: 'Josefin Sans', sans-serif;
             }
         }
         .contacto__formulario{

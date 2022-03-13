@@ -1,5 +1,5 @@
 footer{
-    background-color: $ColorSecu;
+    background-color: $ColorPri_2;
     margin-bottom: 0;
     .footer__contenedor{
         width: 95%;
@@ -16,8 +16,8 @@ footer{
             grid-area: footerLogo;
             a{
                 text-decoration: none;
-                color: $ColorPri_2;
-                font-size: 1.4rem;
+                @include fuentes (2rem,$ColorPri_1,600);
+                font-family: 'Josefin Sans', sans-serif;
                 &:hover{
                     transform: scale(1.2);
                     transition-duration: 0.4s;
@@ -28,9 +28,9 @@ footer{
             grid-area: footerDirec;
             ul{
                 li{
-                    color: $ColorPri_1;
+                    @include fuentes (1rem,black,400);
+                    font-family: 'Josefin Sans', sans-serif;
                     margin:0.2rem 0rem;
-                    font-size: 1.1rem;
                 }
             }
         }
@@ -56,6 +56,7 @@ footer{
                                 color: $color;
                             }
                         }
+
                     }
                 }
             }
@@ -65,9 +66,9 @@ footer{
             ul{
                 li{
                     a{
-                        color: $ColorPri_1;
+                        @include fuentes (1rem,black,400);
+                        font-family: 'Josefin Sans', sans-serif;
                         margin:0.2rem 0rem;
-                        font-size: 1.1rem;
                         text-decoration: none;
                     }
                 }
@@ -78,7 +79,8 @@ footer{
             display: flex;
             justify-content: center;
             p{
-                color: $ColorPri_2;
+                @include fuentes (0.8rem,black,300);
+                font-family: 'Josefin Sans', sans-serif;
             }
         }
 

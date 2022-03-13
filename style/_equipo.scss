@@ -15,11 +15,13 @@
         padding-bottom: 2rem;
         .equipo__texto{
             grid-area: equipoTexto;
-            h3{
-                color: $ColorAcento;
+            .equipo__titulo{
+                @include fuentes (1.8rem,$ColorAcento,600);
+                font-family: 'Josefin Sans', sans-serif;
             }
             p{
-                color: $ColorSecu;
+                @include fuentes (1.1rem,black,400);
+                font-family: 'Josefin Sans', sans-serif;
             }
         }
         .equipo__boton{

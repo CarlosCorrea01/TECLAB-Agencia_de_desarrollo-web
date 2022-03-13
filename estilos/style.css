@@ -1,4 +1,5 @@
 /*todavia no agrego fuentes*/
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,500;1,300;1,600&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -20,31 +21,34 @@ a button, input#boton__enviar {
   font-weight: 600;
   letter-spacing: 1px;
   text-decoration: none;
-  color: rgba(224, 221, 170, 0.9);
-  background: #141E27;
+  color: #F6E7D8;
+  background: #874356;
   cursor: pointer;
   transition: ease-out 0.5s;
   border-radius: 1.8rem;
-  border: 2px solid rgba(224, 221, 170, 0.9);
+  border: 2px solid #F6E7D8;
   border-radius: 10px;
-  box-shadow: inset 0 0 0 0 #EEEDDE; }
+  box-shadow: inset 0 0 0 0 #F6E7D8; }
 
 a button:hover, input#boton__enviar:hover {
-  color: #EEEDDE;
-  box-shadow: inset 0 -100px 0 0 #203239; }
+  color: #F6E7D8;
+  box-shadow: inset 0 -100px 0 0 #C65D7B; }
 
 a button:active, input#boton__enviar:active {
   transform: scale(0.9); }
 
 #general__nav {
   height: 4rem;
-  background-color: #203239;
+  background-color: #C65D7B;
   grid-area: nav;
   z-index: 100; }
   #general__nav div {
     width: 90%; }
     #general__nav div .header__logo a h2 {
-      color: #E0DDAA; }
+      font-size: 2rem;
+      color: #F6E7D8;
+      font-weight: 600;
+      font-family: 'Josefin Sans', sans-serif; }
       #general__nav div .header__logo a h2:hover {
         transform: scale(1.2);
         transition-duration: .4s; }
@@ -59,12 +63,15 @@ a button:active, input#boton__enviar:active {
       align-items: center;
       justify-content: space-between; }
       #general__nav div .header__menu .header__secciones li a {
-        color: #EEEDDE; }
+        font-size: 1rem;
+        color: #F6E7D8;
+        font-weight: 400;
+        font-family: 'Josefin Sans', sans-serif; }
         #general__nav div .header__menu .header__secciones li a:hover {
-          color: #E0DDAA;
+          color: #874356;
           transition-duration: .2s; }
       #general__nav div .header__menu .header__redes li a i {
-        color: #E0DDAA; }
+        color: #F6E7D8; }
         #general__nav div .header__menu .header__redes li a i:hover {
           transform: scale(1.2);
           transition-duration: .4s; }
@@ -72,7 +79,7 @@ a button:active, input#boton__enviar:active {
       width: 85% !important; }
 
 header {
-  background: linear-gradient(to right, rgba(238, 237, 221, 0.9), rgba(238, 237, 221, 0.9), rgba(238, 237, 221, 0.9)), url(../imagenes/programming-g73a2198f0_1280.png);
+  background: linear-gradient(to right, rgba(245, 138, 138, 0.95), rgba(245, 138, 138, 0.95), rgba(245, 138, 138, 0.95)), url(../imagenes/programming-g73a2198f0_1280.png);
   width: 100%;
   height: auto; }
   header #header__index {
@@ -85,13 +92,16 @@ header {
     padding-bottom: 8rem; }
     header #header__index nav {
       height: 4rem;
-      background-color: #203239;
+      background-color: #C65D7B;
       grid-area: nav;
       z-index: 100; }
       header #header__index nav div {
         width: 90%; }
         header #header__index nav div .nav__logo a h2 {
-          color: #E0DDAA; }
+          font-size: 2rem;
+          color: #F6E7D8;
+          font-weight: 600;
+          font-family: 'Josefin Sans', sans-serif; }
           header #header__index nav div .nav__logo a h2:hover {
             transform: scale(1.2);
             transition-duration: .4s; }
@@ -106,12 +116,15 @@ header {
           align-items: center;
           justify-content: space-between; }
           header #header__index nav div .nav__menu .nav__secciones li a {
-            color: #EEEDDE; }
+            font-size: 1rem;
+            color: #F6E7D8;
+            font-weight: 400;
+            font-family: 'Josefin Sans', sans-serif; }
             header #header__index nav div .nav__menu .nav__secciones li a:hover {
-              color: #E0DDAA;
+              color: #874356;
               transition-duration: .2s; }
           header #header__index nav div .nav__menu .nav__redes li a .header__red, header #header__index nav div .nav__menu .nav__redes li a .header__red--insta, header #header__index nav div .nav__menu .nav__redes li a .header__red--face, header #header__index nav div .nav__menu .nav__redes li a .header__red--git {
-            color: #E0DDAA; }
+            color: #F6E7D8; }
             header #header__index nav div .nav__menu .nav__redes li a .header__red:hover, header #header__index nav div .nav__menu .nav__redes li a .header__red--insta:hover, header #header__index nav div .nav__menu .nav__redes li a .header__red--face:hover, header #header__index nav div .nav__menu .nav__redes li a .header__red--git:hover {
               transform: scale(1.2);
               transition-duration: .4s; }
@@ -127,17 +140,23 @@ header {
       grid-area: texto;
       margin-left: 1rem; }
       header #header__index .header__texto h1 {
-        color: #141E27;
         font-size: 1.5rem;
+        color: #F6E7D8;
+        font-weight: 600;
+        font-family: 'Josefin Sans', sans-serif;
         margin-top: 2rem; }
       header #header__index .header__texto h2 {
-        font-weight: 500;
+        font-size: 4rem;
+        color: #F6E7D8;
+        font-weight: 600;
         word-spacing: 70%;
-        color: #203239;
-        font-size: 4rem; }
+        font-family: 'Josefin Sans', sans-serif; }
       header #header__index .header__texto p {
-        color: #203239;
-        line-height: 2; }
+        font-size: 1.1rem;
+        color: #F6E7D8;
+        font-weight: 400;
+        line-height: 2;
+        font-family: 'Josefin Sans', sans-serif; }
     header #header__index .header__extra {
       grid-area: extra;
       margin-right: 1rem;
@@ -151,10 +170,16 @@ header {
   #nosotros .nosotros__contenedor {
     width: 97%;
     margin: 6rem 0rem; }
-    #nosotros .nosotros__contenedor div div h3 {
-      color: #141E27; }
+    #nosotros .nosotros__contenedor div div .nosotros__titulo {
+      font-size: 1.8rem;
+      color: #874356;
+      font-weight: 600;
+      font-family: 'Josefin Sans', sans-serif; }
     #nosotros .nosotros__contenedor div div p {
-      color: #203239; }
+      font-size: 1.1rem;
+      color: black;
+      font-weight: 400;
+      font-family: 'Josefin Sans', sans-serif; }
 
 #servicios {
   margin-top: 25vh; }
@@ -165,14 +190,20 @@ header {
     grid-template-rows: auto auto auto auto auto auto; }
     #servicios .servicios__contenedor .servicios__texto {
       grid-area: serviciosTexto;
-      background-color: rgba(224, 221, 170, 0.9); }
-      #servicios .servicios__contenedor .servicios__texto h3 {
-        color: #141E27; }
+      background-color: #F6E7D8; }
+      #servicios .servicios__contenedor .servicios__texto .servicios__titulo {
+        font-size: 1.8rem;
+        color: #874356;
+        font-weight: 600;
+        font-family: 'Josefin Sans', sans-serif; }
       #servicios .servicios__contenedor .servicios__texto p {
-        color: #203239; }
+        font-size: 1.1rem;
+        color: black;
+        font-weight: 400;
+        font-family: 'Josefin Sans', sans-serif; }
     #servicios .servicios__contenedor .servicios__destacados {
       grid-area: serviciosDesta;
-      background-color: rgba(224, 221, 170, 0.9); }
+      background-color: #F6E7D8; }
       #servicios .servicios__contenedor .servicios__destacados .servicios__des--cont {
         width: 90vw;
         display: grid;
@@ -180,19 +211,26 @@ header {
         grid-template-rows: auto auto;
         gap: 1.5rem; }
         #servicios .servicios__contenedor .servicios__destacados .servicios__des--cont div h3 {
-          color: #141E27; }
+          font-size: 1.7rem;
+          color: #874356;
+          font-weight: 400;
+          font-family: 'Josefin Sans', sans-serif; }
         #servicios .servicios__contenedor .servicios__destacados .servicios__des--cont div p {
-          color: #203239; }
+          font-size: 1.1rem;
+          color: black;
+          font-weight: 400;
+          font-family: 'Josefin Sans', sans-serif; }
     #servicios .servicios__contenedor .servicios__precios--titulo {
       grid-area: precioTitulo;
       margin-top: 10rem;
-      padding: 1rem 0rem;
-      background-color: rgba(32, 50, 57, 0.9); }
-      #servicios .servicios__contenedor .servicios__precios--titulo h3 {
-        color: #E0DDAA; }
+      padding: 1rem 0rem; }
+      #servicios .servicios__contenedor .servicios__precios--titulo p {
+        font-size: 1.8rem;
+        color: #874356;
+        font-weight: 600;
+        font-family: 'Josefin Sans', sans-serif; }
     #servicios .servicios__contenedor .servicios__precios {
-      grid-area: serviciosPre;
-      background-color: rgba(32, 50, 57, 0.9); }
+      grid-area: serviciosPre; }
       #servicios .servicios__contenedor .servicios__precios .servicios__pre--cont {
         width: 90vw;
         display: grid;
@@ -200,24 +238,33 @@ header {
         grid-template-rows: auto;
         gap: 2.5rem; }
         #servicios .servicios__contenedor .servicios__precios .servicios__pre--cont div {
-          background-color: #E0DDAA; }
-          #servicios .servicios__contenedor .servicios__precios .servicios__pre--cont div div {
-            color: #141E27; }
+          background-color: #F68989; }
+          #servicios .servicios__contenedor .servicios__precios .servicios__pre--cont div div p {
+            font-size: 1.7rem;
+            color: #F6E7D8;
+            font-weight: 600;
+            font-family: 'Josefin Sans', sans-serif; }
           #servicios .servicios__contenedor .servicios__precios .servicios__pre--cont div ul {
-            color: #203239; }
+            color: #C65D7B; }
             #servicios .servicios__contenedor .servicios__precios .servicios__pre--cont div ul li {
-              list-style: circle; }
+              list-style: circle;
+              font-size: 1.1rem;
+              color: black;
+              font-weight: 400;
+              font-family: 'Josefin Sans', sans-serif; }
     #servicios .servicios__contenedor .servicios__mantenimiento--titulo {
       grid-area: serviciosMantT;
       margin-top: 10rem;
       padding: 1rem 0rem;
-      background-color: rgba(224, 221, 170, 0.9);
-      border-bottom: 0.5px solid rgba(32, 50, 57, 0.9); }
+      background-color: #F6E7D8; }
       #servicios .servicios__contenedor .servicios__mantenimiento--titulo h3 {
-        color: #141E27; }
+        font-size: 1.8rem;
+        color: #874356;
+        font-weight: 600;
+        font-family: 'Josefin Sans', sans-serif; }
     #servicios .servicios__contenedor .servicios__mantenimiento {
       grid-area: serviciosMant;
-      background-color: rgba(224, 221, 170, 0.9); }
+      background-color: #F6E7D8; }
       #servicios .servicios__contenedor .servicios__mantenimiento .servicios__mant--cont {
         width: 90vw;
         display: grid;
@@ -225,9 +272,15 @@ header {
         grid-template-rows: auto auto;
         gap: 2.5rem; }
         #servicios .servicios__contenedor .servicios__mantenimiento .servicios__mant--cont div div h3 {
-          color: #141E27; }
+          font-size: 1.7rem;
+          color: #874356;
+          font-weight: 400;
+          font-family: 'Josefin Sans', sans-serif; }
         #servicios .servicios__contenedor .servicios__mantenimiento .servicios__mant--cont div p {
-          color: #203239; }
+          font-size: 1.1rem;
+          color: black;
+          font-weight: 400;
+          font-family: 'Josefin Sans', sans-serif; }
 
 #portafolio {
   margin-top: 25vh; }
@@ -237,10 +290,16 @@ header {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto;
     gap: 2rem; }
-    #portafolio .portafolio__contenedor div h3 {
-      color: #141E27; }
+    #portafolio .portafolio__contenedor div .portafolio__titulo {
+      font-size: 1.8rem;
+      color: #874356;
+      font-weight: 600;
+      font-family: 'Josefin Sans', sans-serif; }
     #portafolio .portafolio__contenedor div p {
-      color: #203239; }
+      font-size: 1.1rem;
+      color: black;
+      font-weight: 400;
+      font-family: 'Josefin Sans', sans-serif; }
     #portafolio .portafolio__contenedor .portafolio__galeria {
       width: 95vw;
       display: grid;
@@ -255,7 +314,7 @@ header {
 
 #equipo {
   margin-top: 25vh;
-  background-color: rgba(224, 221, 170, 0.9); }
+  background-color: #F6E7D8; }
   #equipo .equipo__contenedor {
     width: 95vw;
     display: grid;
@@ -268,10 +327,16 @@ header {
     padding-bottom: 2rem; }
     #equipo .equipo__contenedor .equipo__texto {
       grid-area: equipoTexto; }
-      #equipo .equipo__contenedor .equipo__texto h3 {
-        color: #141E27; }
+      #equipo .equipo__contenedor .equipo__texto .equipo__titulo {
+        font-size: 1.8rem;
+        color: #874356;
+        font-weight: 600;
+        font-family: 'Josefin Sans', sans-serif; }
       #equipo .equipo__contenedor .equipo__texto p {
-        color: #203239; }
+        font-size: 1.1rem;
+        color: black;
+        font-weight: 400;
+        font-family: 'Josefin Sans', sans-serif; }
     #equipo .equipo__contenedor .equipo__boton {
       grid-area: equipoBoton; }
 
@@ -294,10 +359,16 @@ header {
         height: 95%; }
     #contacto .contacto__contenedor .contacto__texto {
       grid-area: contactoTexto; }
-      #contacto .contacto__contenedor .contacto__texto h3 {
-        color: #141E27; }
+      #contacto .contacto__contenedor .contacto__texto .contacto__titulo {
+        font-size: 1.8rem;
+        color: #874356;
+        font-weight: 600;
+        font-family: 'Josefin Sans', sans-serif; }
       #contacto .contacto__contenedor .contacto__texto p {
-        color: #203239; }
+        font-size: 1.1rem;
+        color: black;
+        font-weight: 400;
+        font-family: 'Josefin Sans', sans-serif; }
     #contacto .contacto__contenedor .contacto__formulario {
       grid-area: contactoFormu;
       display: grid;
@@ -324,7 +395,7 @@ header {
         grid-area: enviar; }
 
 footer {
-  background-color: #203239;
+  background-color: #F68989;
   margin-bottom: 0; }
   footer .footer__contenedor {
     width: 95%;
@@ -338,17 +409,21 @@ footer {
       grid-area: footerLogo; }
       footer .footer__contenedor .footer__logo a {
         text-decoration: none;
-        color: #E0DDAA;
-        font-size: 1.4rem; }
+        font-size: 2rem;
+        color: #F6E7D8;
+        font-weight: 600;
+        font-family: 'Josefin Sans', sans-serif; }
         footer .footer__contenedor .footer__logo a:hover {
           transform: scale(1.2);
           transition-duration: 0.4s; }
     footer .footer__contenedor .footer__direcciones {
       grid-area: footerDirec; }
       footer .footer__contenedor .footer__direcciones ul li {
-        color: #EEEDDE;
-        margin: 0.2rem 0rem;
-        font-size: 1.1rem; }
+        font-size: 1rem;
+        color: black;
+        font-weight: 400;
+        font-family: 'Josefin Sans', sans-serif;
+        margin: 0.2rem 0rem; }
     footer .footer__contenedor .footer__redes {
       grid-area: footerRedes; }
       footer .footer__contenedor .footer__redes ul li a .red__instagram {
@@ -360,16 +435,21 @@ footer {
     footer .footer__contenedor .footer__legales {
       grid-area: footerLegal; }
       footer .footer__contenedor .footer__legales ul li a {
-        color: #EEEDDE;
+        font-size: 1rem;
+        color: black;
+        font-weight: 400;
+        font-family: 'Josefin Sans', sans-serif;
         margin: 0.2rem 0rem;
-        font-size: 1.1rem;
         text-decoration: none; }
     footer .footer__contenedor .footer__info {
       grid-area: footerInfo;
       display: flex;
       justify-content: center; }
       footer .footer__contenedor .footer__info p {
-        color: #E0DDAA; }
+        font-size: 0.8rem;
+        color: black;
+        font-weight: 300;
+        font-family: 'Josefin Sans', sans-serif; }
 
 .conocenos__contenedor {
   margin: 5rem 0rem;
@@ -378,7 +458,7 @@ footer {
     width: 90%;
     padding: 2rem 0rem; }
     .conocenos__contenedor .conocenos__titulo h3 {
-      color: #141E27; }
+      color: #874356; }
   .conocenos__contenedor .conocenos__galeria {
     width: 90%;
     display: grid;
@@ -396,7 +476,7 @@ footer {
     width: 90%;
     padding: 2rem 0rem; }
     .trabajos__contenedor .trabajos__titulo h3 {
-      color: #141E27; }
+      color: #874356; }
   .trabajos__contenedor .trabajos__galeria {
     width: 90%;
     display: grid;

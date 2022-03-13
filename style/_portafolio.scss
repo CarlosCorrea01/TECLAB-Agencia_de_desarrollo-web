@@ -7,11 +7,13 @@
         grid-template-rows: auto auto auto;
         gap: 2rem;
         div{
-            h3{
-                color: $ColorAcento;
+            .portafolio__titulo{
+                @include fuentes (1.8rem,$ColorAcento,600);
+                font-family: 'Josefin Sans', sans-serif;
             }
             p{
-                color: $ColorSecu;
+                @include fuentes (1.1rem,black,400);
+                font-family: 'Josefin Sans', sans-serif;
             }
         }
         .portafolio__galeria{

@@ -1,0 +1,5 @@
+@mixin fuentes ($font__size,$color,$font__weigth) {
+    font-size:$font__size ;
+    color:$color ;
+    font-weight:$font__weigth;
+}
