@@ -4,8 +4,9 @@
     .trabajos__titulo{
         width: 90%;
         padding: 2rem 0rem;
-        h3{
-            color: $ColorAcento;
+        p{
+            @include fuentes (2rem,$ColorAcento,600)
+            font-family: 'Josefin Sans', sans-serif;
         }
     }
     .trabajos__galeria{

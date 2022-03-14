@@ -12,13 +12,13 @@ body{
 }
 
 /* Botones generales */
-a button,input#boton__enviar{
+a button,input#boton__enviar{   
+    @include fuentes (0.9rem,$ColorAcento,600);
+    font-family: 'Josefin Sans', sans-serif  ;  
     position: relative;
     display: inline-block;
     padding: 0.2rem 0.5rem;
     text-align: center;
-    font-size: 1rem;
-    font-weight: 600;
     letter-spacing: 1px;
     text-decoration: none;
     color: $Primario_1;

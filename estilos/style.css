@@ -13,12 +13,14 @@ body {
 
 /* Botones generales */
 a button, input#boton__enviar {
+  font-size: 0.9rem;
+  color: #874356;
+  font-weight: 600;
+  font-family: 'Josefin Sans', sans-serif;
   position: relative;
   display: inline-block;
   padding: 0.2rem 0.5rem;
   text-align: center;
-  font-size: 1rem;
-  font-weight: 600;
   letter-spacing: 1px;
   text-decoration: none;
   color: #F6E7D8;
@@ -457,8 +459,11 @@ footer {
   .conocenos__contenedor .conocenos__titulo {
     width: 90%;
     padding: 2rem 0rem; }
-    .conocenos__contenedor .conocenos__titulo h3 {
-      color: #874356; }
+    .conocenos__contenedor .conocenos__titulo p {
+      font-size: 2rem;
+      color: #874356;
+      font-weight: 600;
+      font-family: 'Josefin Sans', sans-serif; }
   .conocenos__contenedor .conocenos__galeria {
     width: 90%;
     display: grid;
@@ -475,8 +480,11 @@ footer {
   .trabajos__contenedor .trabajos__titulo {
     width: 90%;
     padding: 2rem 0rem; }
-    .trabajos__contenedor .trabajos__titulo h3 {
-      color: #874356; }
+    .trabajos__contenedor .trabajos__titulo p {
+      font-size: 2rem;
+      color: #874356;
+      font-weight: 600;
+      font-family: 'Josefin Sans', sans-serif; }
   .trabajos__contenedor .trabajos__galeria {
     width: 90%;
     display: grid;
