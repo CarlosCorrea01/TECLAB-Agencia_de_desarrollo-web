@@ -125,17 +125,11 @@ header {
             header #header__index nav div .nav__menu .nav__secciones li a:hover {
               color: #874356;
               transition-duration: .2s; }
-          header #header__index nav div .nav__menu .nav__redes li a .header__red, header #header__index nav div .nav__menu .nav__redes li a .header__red--insta, header #header__index nav div .nav__menu .nav__redes li a .header__red--face, header #header__index nav div .nav__menu .nav__redes li a .header__red--git {
+          header #header__index nav div .nav__menu .nav__redes li a i {
             color: #F6E7D8; }
-            header #header__index nav div .nav__menu .nav__redes li a .header__red:hover, header #header__index nav div .nav__menu .nav__redes li a .header__red--insta:hover, header #header__index nav div .nav__menu .nav__redes li a .header__red--face:hover, header #header__index nav div .nav__menu .nav__redes li a .header__red--git:hover {
+            header #header__index nav div .nav__menu .nav__redes li a i:hover {
               transform: scale(1.2);
               transition-duration: .4s; }
-          header #header__index nav div .nav__menu .nav__redes li a .header__red--insta {
-            font-size: 1.2rem; }
-          header #header__index nav div .nav__menu .nav__redes li a .header__red--face {
-            font-size: 1.5rem; }
-          header #header__index nav div .nav__menu .nav__redes li a .header__red--git {
-            font-size: 2rem; }
         header #header__index nav div .w-75 {
           width: 85% !important; }
     header #header__index .header__texto {
@@ -311,6 +305,15 @@ header {
       #portafolio .portafolio__contenedor .portafolio__galeria div:hover {
         transform: scale(1.05);
         transition-duration: 0.5s; }
+      #portafolio .portafolio__contenedor .portafolio__galeria div span {
+        background-color: aqua;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: none; }
+        #portafolio .portafolio__contenedor .portafolio__galeria div span:hover {
+          display: block; }
       #portafolio .portafolio__contenedor .portafolio__galeria .portafolio__galeria--4 {
         display: none; }
 
@@ -428,12 +431,11 @@ footer {
         margin: 0.2rem 0rem; }
     footer .footer__contenedor .footer__redes {
       grid-area: footerRedes; }
-      footer .footer__contenedor .footer__redes ul li a .red__instagram {
-        color: #C25E30; }
-      footer .footer__contenedor .footer__redes ul li a .red__facebook {
-        color: #3b5998; }
-      footer .footer__contenedor .footer__redes ul li a .red__github {
-        color: white; }
+      footer .footer__contenedor .footer__redes ul li a i {
+        color: #F6E7D8; }
+        footer .footer__contenedor .footer__redes ul li a i:hover {
+          transform: scale(1.2);
+          transition-duration: .4s; }
     footer .footer__contenedor .footer__legales {
       grid-area: footerLegal; }
       footer .footer__contenedor .footer__legales ul li a {
