@@ -59,7 +59,8 @@ a button:active, input#boton__enviar:active {
     #general__nav div .nav__bars {
       font-size: 1.5rem;
       cursor: pointer;
-      display: none; }
+      display: none;
+      color: #F6E7D8; }
     #general__nav div .header__menu {
       display: flex;
       align-items: center;
@@ -112,7 +113,8 @@ header {
         header #header__index nav div .nav__bars {
           font-size: 1.5rem;
           cursor: pointer;
-          display: none; }
+          display: none;
+          color: #F6E7D8; }
         header #header__index nav div .nav__menu {
           display: flex;
           align-items: center;
@@ -563,7 +565,7 @@ footer {
       position: fixed;
       top: 4rem;
       right: 0;
-      background-color: rgba(245, 245, 245, 0.95); }
+      background-color: rgba(198, 93, 123, 0.7); }
     header #header__index nav div .nav__menu {
       display: none; }
     header #header__index nav div .nav__secciones {
