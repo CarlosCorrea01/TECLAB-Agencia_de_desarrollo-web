@@ -5,7 +5,7 @@
         width: 90%;
         padding: 2rem 0rem;
         p{
-            @include fuentes (2rem,$ColorAcento,600)
+            @include fuentes (2rem,$ColorAcento,600);
             font-family: 'Josefin Sans', sans-serif;
         }
     }
@@ -16,9 +16,37 @@
         grid-template-rows: repeat(3,15rem);
         gap: 2rem;
         justify-content: center;
-        div{
-            background-color: silver;
+        a{
+            position: relative;
             border-radius: 6%;
+            &:hover{
+                transform: scale(1.08);
+                transition-duration: 0.5s;
+            }
+            img{
+                border-radius: 6%;
+                width: 100%;
+                height: 100%;
+            }
+            span{
+                text-decoration: none;
+                background-color: $Secundario_2;
+                position: absolute;
+                border-radius: 6%;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                opacity: 0;
+                &:hover{
+                    opacity: 0.7;
+                }
+                i{
+                    font-size: 2rem;
+                    color: $ColorAcento;
+                    margin-left: 0.5rem;
+                }
+            }
         }
     }
 }
