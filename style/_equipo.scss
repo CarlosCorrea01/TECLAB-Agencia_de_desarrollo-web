@@ -7,12 +7,12 @@
         grid-template-areas: 
         "equipoTexto equipoImg"
         "equipoBoton equipoImg";
-        grid-template-columns: 1fr 0.8fr;
+        grid-template-columns: 1fr fr;
         grid-template-rows: auto auto;
         grid-row-gap: 1rem;
         grid-column-gap: 1rem;
         padding-top: 5rem;
-        padding-bottom: 2rem;
+        padding-bottom: 5rem;
         .equipo__texto{
             grid-area: equipoTexto;
             .equipo__titulo{
@@ -27,5 +27,10 @@
         .equipo__boton{
             grid-area: equipoBoton;
         }
+        .equipo__img{
+            grid-area: equipoImg;
+            width: auto;
+        }
+        
     }
 }

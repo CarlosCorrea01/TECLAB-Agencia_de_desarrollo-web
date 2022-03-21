@@ -339,12 +339,12 @@ header {
     width: 95vw;
     display: grid;
     grid-template-areas: "equipoTexto equipoImg" "equipoBoton equipoImg";
-    grid-template-columns: 1fr 0.8fr;
+    grid-template-columns: 1fr fr;
     grid-template-rows: auto auto;
     grid-row-gap: 1rem;
     grid-column-gap: 1rem;
     padding-top: 5rem;
-    padding-bottom: 2rem; }
+    padding-bottom: 5rem; }
     #equipo .equipo__contenedor .equipo__texto {
       grid-area: equipoTexto; }
       #equipo .equipo__contenedor .equipo__texto .equipo__titulo {
@@ -359,6 +359,9 @@ header {
         font-family: 'Josefin Sans', sans-serif; }
     #equipo .equipo__contenedor .equipo__boton {
       grid-area: equipoBoton; }
+    #equipo .equipo__contenedor .equipo__img {
+      grid-area: equipoImg;
+      width: auto; }
 
 #contacto {
   margin-top: 25vh;
@@ -489,7 +492,10 @@ footer {
     gap: 3rem;
     justify-content: center; }
     .conocenos__contenedor .conocenos__galeria div {
-      background-color: silver; }
+      background-color: rgba(245, 138, 138, 0.95); }
+      .conocenos__contenedor .conocenos__galeria div img {
+        width: 100%;
+        height: 21rem; }
 
 .trabajos__contenedor {
   margin: 5rem 0rem;
@@ -574,8 +580,6 @@ footer {
     justify-items: center; }
     #equipo .equipo__contenedor .equipo__texto {
       width: 90%; }
-      #equipo .equipo__contenedor .equipo__texto p {
-        text-align: center; }
       #equipo .equipo__contenedor .equipo__texto h3 {
         text-align: center; }
     #equipo .equipo__contenedor .equipo__img {
@@ -628,7 +632,7 @@ footer {
     position: fixed;
     top: 4rem;
     right: 0;
-    background-color: rgba(245, 245, 245, 0.95); }
+    background-color: rgba(198, 93, 123, 0.7); }
   #general__nav div .header__menu {
     display: none; }
   #general__nav div .header__secciones {
