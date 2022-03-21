@@ -662,6 +662,10 @@ footer {
     grid-template-rows: repeat(6, 15rem); } }
 
 @media (max-width: 768px) {
+  header #header__index .header__texto h2 {
+    font-size: 3rem;
+    color: #F6E7D8;
+    font-weight: 600; }
   #servicios .servicios__contenedor .servicios__destacados .servicios__des--cont {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto auto auto auto; }

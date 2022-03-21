@@ -1,4 +1,13 @@
 @media (max-width:768px){
+    header{
+        #header__index{
+            .header__texto{
+                h2{
+                    @include fuentes (3rem,$ColorPri_1,600); 
+                }
+            }
+        }
+    }
     #servicios{
         .servicios__contenedor{
             .servicios__destacados{
