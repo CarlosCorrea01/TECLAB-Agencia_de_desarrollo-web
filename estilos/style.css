@@ -492,10 +492,16 @@ footer {
     gap: 3rem;
     justify-content: center; }
     .conocenos__contenedor .conocenos__galeria div {
-      background-color: rgba(245, 138, 138, 0.95); }
+      background-color: #F6E7D8; }
       .conocenos__contenedor .conocenos__galeria div img {
         width: 100%;
         height: 21rem; }
+      .conocenos__contenedor .conocenos__galeria div .nombre {
+        font-size: 2rem;
+        color: #874356;
+        font-weight: 600; }
+      .conocenos__contenedor .conocenos__galeria div .puesto {
+        font-size: 1.3rem; }
 
 .trabajos__contenedor {
   margin: 5rem 0rem;

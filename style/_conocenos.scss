@@ -17,11 +17,18 @@
         gap: 3rem;
         justify-content: center;
         div{
-            background-color: $Primario_2;
+            background-color: $Primario_1;
             img{
                 width: 100%;
                 height: 21rem;
             }
+            .nombre{
+                @include fuentes (2rem,$ColorAcento,600);
+            }
+            .puesto{
+                font-size: 1.3rem;
+            }
+
         }
     }
 }
